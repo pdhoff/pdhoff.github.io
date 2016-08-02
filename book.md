@@ -6,7 +6,7 @@ permalink: /book/
 
 
 ### A First Course in Bayesian Statistical Methods
-![bookcover](/images/bookcover.jpg)
+![bookcover](bookcover.jpg)
 
 
 #### Ordering information
