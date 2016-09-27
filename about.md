@@ -30,7 +30,7 @@ B.S. in Mathematics (1993), Indiana University
 [Alex Volfovsky](http://www.people.fas.harvard.edu/~volfovsky)    
 [Bailey Fosdick](href=http://www.stat.colostate.edu/~bailey)     
 [Xiaoyue Niu](http://stat.psu.edu/people/xun5)     
-[Assaf Ordon](http://www.pce.uw.edu/biography/assaf-oron/)     
+[Assaf Oron](http://www.seattlechildrens.org/research/cores/ccbs/contact/)     
 [Anton Westveld](http://westveld-stat.arizona.edu/ua/home.html>Anton Westveld) 
 
 
