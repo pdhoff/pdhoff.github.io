@@ -25,12 +25,12 @@ B.S. in Mathematics (1993), Indiana University
 
 ### Past mentees
 [Alex Franks](http://afranks.com/)    
-[David Gerard](http://home.uchicago.edu/~dcgerard/home.html)
+[David Gerard](http://home.uchicago.edu/~dcgerard/home.html)   
 [James Harmon](http://www.stat.washington.edu/people/people.php?id=389)   
 [Alex Volfovsky](http://www.people.fas.harvard.edu/~volfovsky)    
 [Bailey Fosdick](href=http://www.stat.colostate.edu/~bailey)     
 [Xiaoyue Niu](http://stat.psu.edu/people/xun5)     
 [Assaf Oron](http://www.seattlechildrens.org/research/cores/ccbs/contact/)     
-[Anton Westveld](https://researchers.anu.edu.au/researchers/westveld-a)
+[Anton Westveld](https://researchers.anu.edu.au/researchers/westveld-a)    
 
 
