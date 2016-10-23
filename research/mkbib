@@ -1,0 +1,4 @@
+export TMPDIR=. ; bibtex2html -d -r -nokeys -m macros.tex  -nf code "code" -nf software "software"  -nf tr "tech report" -nf web "web" -nf pdf "pdf" -html-entities -nodoc --no-footer -s web pdhbib.bib
+
+
+
