@@ -21,7 +21,9 @@ B.S. in Mathematics (1993), Indiana University
 
 [Yanjun He](http://www.stat.washington.edu/people/people.php?id=415)     
 [Chaoyu Yu](http://students.washington.edu/chaoyuyu/)   
-[Maryclare Griffin](http://www.stat.washington.edu/people/mgrffn/)
+[Maryclare Griffin](http://www.stat.washington.edu/people/mgrffn/)   
+[Stephanie Brown](http://stat.duke.edu/people/stephanie-brown)   
+
 
 ### Past mentees
 [Alex Franks](http://afranks.com/)      
