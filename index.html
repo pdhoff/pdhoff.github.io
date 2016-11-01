@@ -5,29 +5,36 @@ layout: default
 <div class="home">
 
 
-<div id="column1" style="float:left; width: 25%;" >
+<div id="column1" style="float:left; width: 22%;" >
 <p> <img src="images/peter_hoff.jpg" alt="Peter Hoff" style="width:150px;"></p>
 </div>
 
-<div id="column2" style="float:left; width: 33%;" >
+<div id="column2" style="float:left; width: 30%;" >
 <p> <h3>Professor</h3> </p>
 <p> <h3> Statistical Science</h3></p>
 <p><h3> Duke University </h3></p>
 </div>
 
-<!--   <h1 class="page-heading">Posts</h1>   -->
+
+<!-- 
+
+<div id="column3" style="float:right; width: 38%;" >
+<p><h3>Posts</h3>
 
   <ul class="post-list">
     {% for post in site.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
+        <h3>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+        </h3>
       </li>
     {% endfor %}
   </ul>
+</p>
+
+-->
+
 
 <!-- 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>

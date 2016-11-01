@@ -1,0 +1,14 @@
+---
+layout: post
+title: "A simple algorithm for lasso and fractional norm penalties"
+author: Peter Hoff
+---
+
+Blah 
+
+
+```{r}
+plot(rnorm(20)) 
+```
+
+
