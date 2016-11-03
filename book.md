@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Book
+menu: true
 permalink: /book/
 ---
 

@@ -1,10 +1,16 @@
 ---
 layout: page
 title: Teaching
+menu: true
 permalink: /teaching/
 ---
 
 
+#### Current teaching
+
+[STAT 832](stat832) Multivariate Statistical Analysis
+
+#### Past teaching
 
 [UW STAT 421](http://www.stat.washington.edu/~hoff/courses/421-502) Applied Statistics and Experimental Design 
 
