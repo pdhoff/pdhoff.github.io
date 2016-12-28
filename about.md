@@ -6,8 +6,7 @@ permalink: /about/
 ---
 
 
-
-### Employment
+### Position
 Professor     
 Department of Statistical Science    
 Duke University    

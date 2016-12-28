@@ -1,14 +1,164 @@
 ---
 layout: post
-title: "A simple algorithm for lasso and fractional norm penalties"
+title: "Penalized regression using only first-year calculus"
 author: Peter Hoff
 ---
 
-Blah 
+### Summary
+In modern data analyses people often encounter the problem of 
+too many regressors and not enough observations. In this situation, 
+the OLS regression estimate is highly variable and can lead to 
+poor predictions. 
 
 
-```{r}
-plot(rnorm(20)) 
+### Penalized linear regression
+
+
+#### Least squares estimation
+If you are familiar with the linear regression model
+$$y_i = \beta^\top x_i + \epsilon_i$$ you probably know that
+the OLS regression estimate $\hat \beta_{\text{ols}}$ is the minimizer
+of the residual sum of squares
+
+$$
+ \hat \beta_{\text{ols}} = \arg \min_\beta \sum (y_i - \beta^\top x_i  )^2 . 
+$$
+
+It is convenient to rewrite the residual sum of squares as
+
+$$
+\begin{align*} 
+\sum (y_i - \beta^\top x_i  )^2  &= \sum y_i^2 - 2 \beta^\top \sum y_ix_i +
+    \beta^\top \left (\sum x_i x_i^\top \right ) \\
+  &= ||y||^2 - 2 \beta^\top l + \beta^\top Q \beta. 
+\end{align*}
+$$
+
+Since the difference between the RSS at any two 
+values of $\beta$ is not affected by the value of $||y||^2$, 
+we can write 
+
+$$
+ \hat \beta_{\text{ols}} = \arg \min_\beta   \beta^\top Q \beta -  2 \beta^\top l .
+$$
+
+Using calculus or orthogonaliy considerations, you can show 
+$\hat \beta_{\text{ols}}$ will satisfy 
+$2 Q \hat\beta_{\text{ols}} = 2 l$. If 
+$Q$ is invertible, then 
+
+$$
+\begin{align*}
+ \hat \beta_{\text{ols}} & = \arg \min_\beta   \beta^\top Q \beta -  2 \beta^\top l . \\ 
+ &= Q^{-1} l.
+\end{align*}
+$$
+
+
+#### Ridge regression
+As described above, the OLS estimate has fallen out 
+of fashion, and people nowadays prefer ~~Bayesian~~ 
+penalized estimates given by
+
+$$
+\hat \beta = \arg \min_\beta \beta^\top Q \beta -  2 \beta^\top l  + f(\beta)
+$$
+
+where $f(\beta)$ is some penalty function. One popular penalty function is 
+an $L_2$ or ``ridge'' penalty, 
+given by $f(\beta) = \lambda\beta^\top \beta$ for some $\lambda>0$. 
+This penalty can also be written as 
+$f(\beta) = \lambda \sum |\beta_j|^2$. 
+In this case, the penalized 
+regression estimate is given as follows:
+
+$$
+\begin{align*}
+\hat \beta & = \arg \min_\beta \beta^\top Q \beta -  2 \beta^\top l  +  \lambda \beta^\top \beta   \\ 
+   &= \arg \min_\beta \beta^\top (Q + \lambda I) \beta -  2 \beta^\top l.  \\
+   &= ( Q + \lambda I  )^{-1} l ,
+\end{align*}
+$$ 
+
+where the last line follows by using the same logic as used to
+obtain the OLS estimator, with $Q$ replaced by $Q+\lambda I$. 
+The resulting 
+estimator is called a ridge regression estimator, and 
+happens to be equal to the posterior mean estimator of
+$\beta$ under a $N(0,1/\lambda)$ prior distribution for 
+the elements of $\beta$.
+
+
+
+#### Lasso regression 
+Another popular penalty  on $\beta$ is the $L_1$ or lasso penalty,
+given by $f(\beta) =\lambda  \sum |\beta_j|$. A lasso estimate is 
+then given by 
+
+$$
+\begin{align*}
+\hat \beta & = \arg \min_\beta \beta^\top Q \beta -  2 \beta^\top l  +  \lambda \sum | \beta_j|.    
+\end{align*}
+$$
+
+Unfortunately there is no closed-form expression for the lasso 
+estimator. To compute it, you need to do one of the following:
+
+1. learn convex optimization and then write an algorithm; 
+2. use a canned algorithm that you don't understand; 
+3. use a trick that only requires knowing that 
+   a function's minimum occurs where its derivative is zero. 
+
+
+
+### The Hadamard product parametrization of the $L_1$ penalty
+
+#### The math
+Here is the extent of the calculus 
+you need to know to understand the HPP optimization scheme: 
+Let $h(x) =  x + a/x$ for $x>0$ and some fixed $a>0$. 
+Here is a plot of this function for $a=2$:
+
+```{r,echo=FALSE,fig.width=5,fig.height=3} 
+par(mar=c(3,3,1,1),mgp=c(1.75,.75,0))
+plot(function(x){ x+1/x } ,xlim=c(0,3),ylab="g(x)") 
 ```
+
+This looks convex. Let's take a derivative and see where 
+it is zero: 
+
+$$
+\begin{align*}
+h'(x)  = 1  - a/x^2  &  = 0  \\  
+         x^2 &= a. 
+\end{align*}
+$$
+
+
+So the only critical point is $x= \sqrt{a}$. The picture suggests that
+this is the function's minimum, but that's not enough for full credit on the 
+calculus quiz. Let's take another derivative:
+
+$$
+h''(x) = 2a/x^3.
+$$
+
+That's positive, so indeed $x=\sqrt{a}$ is the minimum of this function. 
+
+
+#### The Hadamard product parametrization
+
+Now suppose we have a single (scalar) $\beta$ and want to minimize 
+some function $\tilde f(\beta) = f(\beta) + \lambda |\beta|$. 
+Here is one way to do it: Write $\beta=uv$ and 
+find  values of $u$ and $v$ that minimize the function
+$\tilde g(u,v) = f(uv) + \lambda u^2/2 + \lambda v^2/2$.
+
+
+
+
+
+
+
 
 
