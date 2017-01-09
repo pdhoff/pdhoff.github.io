@@ -8,7 +8,7 @@ permalink: /teaching/
 
 #### Current teaching
 
-[STAT 832](stat832) Multivariate Statistical Analysis
+[STAT 832](stat832/stat832.html) Multivariate Statistical Analysis
 
 #### Past teaching
 

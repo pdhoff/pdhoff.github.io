@@ -3,7 +3,39 @@ layout: page
 title:  STAT 832 
 ---
 
+
+---
+---
+
+
+
 ### STAT 832: Multivariate Statistical Analysis
+
+
+---
+---
+
+#### Course information
+* Instructor: [Peter Hoff](https://pdhoff.github.io/) 
+* TA: [Michael Jauch](http://michaeljauch.github.io/) 
+* Lecture: MW 10:05-11:20, Perkins LINK 087
+* Office hours: TTh 10:30-11:30 Rm 219 (PH),   (MJ)     
+
+---
+
+#### Course materials 
+* [Lecture notes, code and data](http://www.stat.duke.edu/~pdh10/Teaching/832/)
+* [Applied Multivariate Statistical Analysis (Hardle and Simar)](http://www.springer.com/us/book/9783662451700) 
+* [Modern Multivariate Statistical Techniques (Izenman)](http://www.springer.com/us/book/9780387781884)     
+* [Sakai link](https://sakai.duke.edu/x/fOgSTy) 
+
+---
+
+#### Announcments 
+
+2017-01-11:
+
+---
 
 
 #### Tentative schedule of topics 
@@ -28,11 +60,12 @@ title:  STAT 832
    1. Graphical models and sparse estimation
    2. Optimal shrinkage when $p\approx n$
 
+---
 
 #### Evaluation
-* Homework 
-* Project
-* Presentation/course participation
+* 60% Homework 
+* 20% Data project
+* 20% Paper project 
 
 
 
