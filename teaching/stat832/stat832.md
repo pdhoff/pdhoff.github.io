@@ -66,6 +66,6 @@ title:  STAT 832
 * 60% Homework 
 * 20% Data project
 * 20% Paper project 
-
+* grade = x exp(-l/8), where x=score, l=days late (including weekends)
 
 
