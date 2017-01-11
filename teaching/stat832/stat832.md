@@ -33,7 +33,8 @@ title:  STAT 832
 
 #### Announcments 
 
-2017-01-11:
+2017-01-11: Do exercises 1 through 7 in the course notes on 
+eigendcompositions, to be turned in Wednesday 2017-01-18. 
 
 ---
 
