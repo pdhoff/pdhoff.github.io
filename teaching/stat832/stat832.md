@@ -19,7 +19,7 @@ title:  STAT 832
 * Instructor: [Peter Hoff](https://pdhoff.github.io/) 
 * TA: [Michael Jauch](http://michaeljauch.github.io/) 
 * Lecture: MW 10:05-11:20, Perkins LINK 087
-* Office hours: TTh 10:30-11:30 Rm 219 (PH),   (MJ)     
+* Office hours: TTh 10:30-11:30 Rm 219 (PH),  T 2:30-4:30 Rm 211A (MJ)     
 
 ---
 
