@@ -68,7 +68,7 @@ $$
  \hat \beta_{\text{ols}} = \arg \min_\beta   \beta^\top Q \beta -  2 \beta^\top l .
 $$
 
-Using calculus or orthogonality considerations, you can show 
+Using calculus or orthogonaliy considerations, you can show 
 $\hat \beta_{\text{ols}}$ will satisfy 
 $2 Q \hat\beta_{\text{ols}} = 2 l$. If 
 $Q$ is invertible, then 
@@ -240,7 +240,7 @@ The third line follows from the second by noting that the second line is
 equivalent to the ridge regression criterion where $u$ is the parameter. 
 A similar result holds for the optimal value of $v$ given $u$. 
 An alternating ridge regression algorithm for finding the lasso 
-estimate $\hat \beta = \hat u\circ \hat v$ is therefore to iterate
+etimate $\hat \beta = \hat u\circ \hat v$ is therefore to iterate
 the following until convergence. 
 
 1. Set $u =(Q \circ v v^\top + I  \lambda/2 )^{-1} (v\circ l)$. 

@@ -11,6 +11,7 @@
 
 <meta name="author" content="Peter Hoff" />
 
+<meta name="date" content="2017-01-17" />
 
 <title>Penalized regression using only first-year calculus</title>
 
@@ -117,6 +118,7 @@ $(document).ready(function () {
 
 <h1 class="title toc-ignore">Penalized regression using only first-year calculus</h1>
 <h4 class="author"><em>Peter Hoff</em></h4>
+<h4 class="date"><em>2017-01-17</em></h4>
 
 </div>
 
@@ -128,7 +130,11 @@ pre { font-size: 14px }
 </style>
 <div id="summary" class="section level3">
 <h3>Summary</h3>
-<p>Modern data analyses often involve too many regressors and not enough observations. In this situation, the OLS regression estimator is highly variable and can lead to poor predictions.</p>
+<p>Modern data analyses often involve too many regressors and not enough observations. In this situation, the OLS regression estimator is highly variable and can lead to poor predictions. A popular alternative estimator is the Lasso regression estimator. In this post I explain how the lasso regression estimator may be computed by iterating the following two lines of code</p>
+<pre class="r"><code>u&lt;- solve( Q * v%*%t(v) + Il/2 )%*%( l*v )
+
+v&lt;- solve( Q * u%*%t(u) + Il/2 )%*%( l*u )  </code></pre>
+<p>Understanding why this iterative algorithm works requires only a basic understanding of linear regression and first semester calculus. The full article describing this algorithm is detailed in <a href="https://arxiv.org/abs/1611.00040">arXiv:1611.00040</a>. Below is a summary and example.</p>
 </div>
 <div id="penalized-linear-regression" class="section level3">
 <h3>Penalized linear regression</h3>
@@ -150,7 +156,7 @@ pre { font-size: 14px }
 <p><span class="math display">\[
  \hat \beta_{\text{ols}} = \arg \min_\beta   \beta^\top Q \beta -  2 \beta^\top l .
 \]</span></p>
-<p>Using calculus or orthogonaliy considerations, you can show <span class="math inline">\(\hat \beta_{\text{ols}}\)</span> will satisfy <span class="math inline">\(2 Q \hat\beta_{\text{ols}} = 2 l\)</span>. If <span class="math inline">\(Q\)</span> is invertible, then</p>
+<p>Using calculus or orthogonality considerations, you can show <span class="math inline">\(\hat \beta_{\text{ols}}\)</span> will satisfy <span class="math inline">\(2 Q \hat\beta_{\text{ols}} = 2 l\)</span>. If <span class="math inline">\(Q\)</span> is invertible, then</p>
 <p><span class="math display">\[
 \begin{align*}
  \hat \beta_{\text{ols}} &amp; = \arg \min_\beta   \beta^\top Q \beta -  2 \beta^\top l . \\ 
@@ -252,7 +258,7 @@ Let’s return to the <span class="math inline">\(L_1\)</span> penalized linear 
 &amp; = u^\top (Q \circ v v^\top + I  \lambda/2  ) u - 2 u^\top (v\circ l)   \\
  &amp;= (Q \circ v v^\top + I  \lambda/2 )^{-1} (v\circ l). 
 \end{align*}\]</span>
-<p>The third line follows from the second by noting that the second line is equivalent to the ridge regression criterion where <span class="math inline">\(u\)</span> is the parameter. A similar result holds for the optimal value of <span class="math inline">\(v\)</span> given <span class="math inline">\(u\)</span>. An alternating ridge regression algorithm for finding the lasso etimate <span class="math inline">\(\hat \beta = \hat u\circ \hat v\)</span> is therefore to iterate the following until convergence.</p>
+<p>The third line follows from the second by noting that the second line is equivalent to the ridge regression criterion where <span class="math inline">\(u\)</span> is the parameter. A similar result holds for the optimal value of <span class="math inline">\(v\)</span> given <span class="math inline">\(u\)</span>. An alternating ridge regression algorithm for finding the lasso estimate <span class="math inline">\(\hat \beta = \hat u\circ \hat v\)</span> is therefore to iterate the following until convergence.</p>
 <ol style="list-style-type: decimal">
 <li>Set <span class="math inline">\(u =(Q \circ v v^\top + I \lambda/2 )^{-1} (v\circ l)\)</span>.</li>
 <li>Set <span class="math inline">\(v =(Q \circ u u^\top + I \lambda/2 )^{-1} (u\circ l)\)</span>.</li>
@@ -328,7 +334,12 @@ beta_lhp&lt;-u*v*w*x</code></pre>
   \hat \beta_{1/2} = 
   \arg \min ||y-X\beta||^2  + \lambda ||\beta||_{1/2}.
 \]</span></p>
-<p>This penalty is non-convex, and allows for more shrinkage of the small coefficients without biasing the larger coefficients as much. More on the correspondence between this penalty and the Hadamard product parametrization can be found in the article <a href="https://arxiv.org/abs/1611.00040">arXiv:1611.00040</a>.</p>
+<p>This penalty is non-convex, and allows for more shrinkage of the small coefficients without biasing the larger coefficients as much. More on the correspondence between this penalty and the Hadamard product parametrization can be found in my article <a href="https://arxiv.org/abs/1611.00040">arXiv:1611.00040</a>. The article also includes</p>
+<ul>
+<li>a comparison to other optimization methods;</li>
+<li>an algorithm for penalized logistic regression;</li>
+<li>an new penalty for spatially structured sparsity.</li>
+</ul>
 </div>
 
 

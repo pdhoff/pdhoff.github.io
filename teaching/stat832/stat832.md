@@ -32,9 +32,17 @@ title:  STAT 832
 ---
 
 #### Announcments 
+2017-01-18: Do the [second set of exercises](hw2)
+to be turned in Wednesday 2017-01-25. The data exercises should 
+be done in [Rmarkdown](http://rmarkdown.rstudio.com/), and an 
+executable file should be submitted via Sakai. 
+
 
 2017-01-11: Do exercises 1 through 7 in the course notes on 
 eigendcompositions, to be turned in Wednesday 2017-01-18. 
+
+
+
 
 ---
 
