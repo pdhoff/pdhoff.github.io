@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Penalized regression using only first-year calculus"
+title: "Penalized regression using only first-semester calculus"
 author: Peter Hoff
 output: html_document
-date:   2017-01-17 
+date:   2017-01-18
 ---
 
 
@@ -24,18 +24,26 @@ the OLS regression estimator is highly variable and can lead to
 poor predictions. A popular alternative estimator is the Lasso 
 regression estimator. In this post I explain how the lasso regression 
 estimator may be computed by iterating the following two 
-lines of code
+lines of code:
 ```{r,eval=FALSE}
-u<- solve( Q * v%*%t(v) + Il/2 )%*%( l*v )
+u<- solve( Q * v%*%t(v) + lambda*diag(p)/2 )%*%( l*v )
 
-v<- solve( Q * u%*%t(u) + Il/2 )%*%( l*u )  
+v<- solve( Q * u%*%t(u) + lambda*diag(p)/2 )%*%( l*u )  
 ```
 Understanding why this iterative algorithm works requires 
 only a basic understanding of linear regression and 
-first semester calculus. The full article describing this 
-algorithm is detailed in 
+first-semester calculus. 
+Specifically, the only fact from optimization you really need to 
+know is that
+
+$$
+\min_v    v^2+ \theta^2/v^2 =  2|\theta| 
+$$
+
+The full article describing this 
+idea and algorithm is available at
 [arXiv:1611.00040](https://arxiv.org/abs/1611.00040). Below 
-is a summary and example. 
+is a synopsis and brief example. 
 
 ### Penalized linear regression
 
@@ -95,8 +103,8 @@ an $L_2$ or "ridge" penalty,
 given by $f(\beta) = \lambda\beta^\top \beta$ for some $\lambda>0$. 
 This penalty can also be written as 
 $f(\beta) = \lambda \sum |\beta_j|^2$. 
-In this case, the penalized 
-regression estimate is given as follows:
+For this ridge penalty, the penalized 
+regression estimate is 
 
 $$
 \begin{align*}
@@ -119,7 +127,7 @@ the elements of $\beta$.
 #### Lasso regression 
 Another popular penalty  on $\beta$ is the $L_1$ or lasso penalty,
 given by $f(\beta) =\lambda  \sum |\beta_j|$. A lasso estimate is 
-then given by 
+given by 
 
 $$
 \begin{align*}
@@ -134,13 +142,14 @@ estimator. To compute it, you need to do one of the following:
 2. Use a canned algorithm that you don't understand; 
 3. Use a trick that only requires knowing first-semester undergrad calculus.
 
+The third option is explained below. 
 
 
 ### The Hadamard product parametrization of the $L_1$ penalty
 
 #### The math
-Here is the extent of the calculus 
-you need to know to understand the HPP optimization scheme: 
+The calculus 
+you need to know to understand the trick is as follows:
 Let $h(x) =  x + a/x$ for $x>0$ and some fixed $a>0$. 
 Here is a plot of this function for $a=2$:
 
@@ -168,12 +177,15 @@ $$
 h''(x) = 2a/x^3.
 $$
 
-That's positive, so indeed $x=\sqrt{a}$ is the minimum of this function:
+That's positive, so indeed $x=\sqrt{a}$ is the minimum of this function. 
+So we have
+
+$$
 \begin{align*}
   \arg \min_{x>0}  x + a/x  &= \sqrt{a} \\ 
-   \min_{x>0}  x + a/x  & = 2 \sqrt{a}  \\ 
+   \min_{x>0}  x + a/x  & = 2 \sqrt{a}. \\ 
 \end{align*}
-
+$$
 
 #### The reparametrization
 
@@ -185,16 +197,19 @@ find  values of $u$ and $v$ that minimize the function
 \[ \tilde g(u,v) = f(uv) + \lambda u^2/2 + \lambda v^2/2.\]
 
 Let's see why this works:
+
+$$
 \begin{align*}
-\min_{u,v}  f(uv) + \lambda u^2/2 + \lambda v^2/2   &= 
-\min_{\beta,u} f(\beta) + \lambda u^2/2 + \lambda (\beta/u)^2/2 
- \\
+\min_{u,v} f(uv) + \lambda u^2/2 + \lambda v^2/2   &= 
+\min_{\beta,u} f(\beta) + \lambda u^2/2 + \lambda (\beta/u)^2/2  \\
  &= \min_\beta f(\beta)  +
     \tfrac{\lambda}{2} \min_u \left [ u^2 + (\beta/u)^2 \right ]   \\
  &=  \min_\beta f(\beta) +
      \tfrac{\lambda}{2} ( 2\sqrt{\beta^2} )  \\
  &=    \min_\beta f(\beta) + \lambda|\beta|.
 \end{align*}
+$$
+
 The first line follows by letting $\beta= uv$. The third line 
 follows from the calculus result above. 
 
@@ -222,20 +237,26 @@ in $u$ and $v$.
 #### Lasso estimates via alternating ridge regressions
 
 Let's return to the $L_1$ penalized linear regression problem:
-\[
+
+$$
 \hat \beta =  \arg \min_\beta  \beta^\top Q \beta - 2 \beta^\top l  + \lambda ||\beta||_1 
-\]
+$$
+
 As we discussed above, $\hat \beta = \hat u\circ \hat v$ where 
 \[
 (\hat u,\hat v) =  \arg \min_{u,v} \    (u\circ v)^\top Q (u\circ v) - 2 (u\circ v )^\top l  +  \tfrac{\lambda}{2}u^\top u + \tfrac{\lambda}{2}v^\top v .
 \]
 The optimal  $u$ for fixed $v$ is 
+
+$$
 \begin{align*} 
  \tilde u & = \arg \min_u  
 (u\circ v)^\top Q (u\circ v)-2 (u\circ v)^\top l + \tfrac{\lambda}{2}u^\top u  \\
 & = u^\top (Q \circ v v^\top + I  \lambda/2  ) u - 2 u^\top (v\circ l)   \\
  &= (Q \circ v v^\top + I  \lambda/2 )^{-1} (v\circ l). 
 \end{align*}
+$$
+
 The third line follows from the second by noting that the second line is 
 equivalent to the ridge regression criterion where $u$ is the parameter. 
 A similar result holds for the optimal value of $v$ given $u$. 
@@ -272,7 +293,7 @@ par(mar=c(3,3,1,1),mgp=c(1.75,.75,0))
 plot(sort(beta_ols),col="lightblue",pch=16,xlab="",ylab=expression(hat(beta)))
 abline(h=0)
 bigc<-which(abs(beta_ols)>.5)
-text(rank(beta_ols)[bigc],beta_ols[bigc],colnames(X)[bigc],srt=-45,cex=.7)
+text(rank(beta_ols)[bigc],beta_ols[bigc],colnames(X)[bigc],srt=-45,cex=.9)
 ```
 
 ```{r}
@@ -322,6 +343,9 @@ for(s in 1:100)
 beta_l1p<-u*v
 ```
 
+(This code can be sped-up by using Cholesky factorizations - see the 
+code on my website for details). 
+
 Here are the resulting lasso estimates. As can be seen, many of the 
 estimated coefficients are zero. 
 ```{r,echo=FALSE}
@@ -329,7 +353,7 @@ par(mar=c(3,3,1,1),mgp=c(1.75,.75,0))
 plot(sort(beta_l1p),col="lightblue",pch=16,xlab="",ylab=expression(hat(beta)))
 abline(h=0)
 bigc<-which(abs(beta_l1p)>1e-5)
-text(rank(beta_l1p)[bigc],beta_l1p[bigc],colnames(X)[bigc],srt=-45,cex=.7)
+text(rank(beta_l1p)[bigc],beta_l1p[bigc],colnames(X)[bigc],srt=-45,cex=.9)
 ```
 
 The resulting sparse estimate provide slightly improved
@@ -379,7 +403,7 @@ par(mar=c(3,3,1,1),mgp=c(1.75,.75,0))
 plot(sort(beta_lhp),col="lightblue",pch=16,xlab="",ylab=expression(hat(beta)))
 abline(h=0)
 bigc<-which(abs(beta_lhp)>1e-5)
-text(rank(beta_lhp)[bigc],beta_lhp[bigc],colnames(X)[bigc],srt=-45,cex=.7) 
+text(rank(beta_lhp)[bigc],beta_lhp[bigc],colnames(X)[bigc],srt=-45,cex=.9) 
 ## --
 ```
 
@@ -395,7 +419,8 @@ mean( (ytest - Xtest%*%beta_lhp)^2 )
 
 What is this crazy estimate, that was obtained by writing 
 $\beta$ as the Hadamard product of four quantities? 
-In fact, you can show that the resulting estimate 
+With a similar calculus trick that was used above, 
+you can show that the resulting estimate 
 `beta_lhp` is a local minimizer of the $L_{1/2}$-penalized 
 residual sum of squares:
 
@@ -415,7 +440,7 @@ also includes
 
 * a comparison to other optimization methods;
 * an algorithm for penalized logistic regression; 
-* an new penalty for spatially structured sparsity. 
+* a new penalty for spatially structured sparsity. 
 
 
 
