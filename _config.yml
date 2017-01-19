@@ -2,7 +2,7 @@
 title: Peter Hoff
 
 # Build settings
-markdown: maruku
+markdown: kramdown
 
 
 
