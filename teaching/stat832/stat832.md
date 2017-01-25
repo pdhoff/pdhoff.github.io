@@ -31,7 +31,11 @@ title:  STAT 832
 
 ---
 
-#### Announcments 
+#### Announcments  
+2017-01-25: Do the [third set of exercises](hw2)
+to be turned in Wednesday 2017-02-01. 
+
+
 2017-01-18: Do the [second set of exercises](hw2)
 to be turned in Wednesday 2017-01-25. The data exercises should 
 be done in [Rmarkdown](http://rmarkdown.rstudio.com/), and an 
