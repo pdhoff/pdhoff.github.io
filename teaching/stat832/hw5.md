@@ -3,8 +3,7 @@ Do  exercises 3, 4, 5, 9, 10, 11 and 12 from the
 notes on the normal distribution. Make sure you have the notes as of Wed, 3:13. 
 
 
-#### 
-Partial isotropy simulation 
+#### Partial isotropy simulation
 
 In this exercise you will examine the properties of the 
 sample covariance of a normal matrix under the partial 
