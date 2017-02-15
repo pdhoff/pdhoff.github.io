@@ -32,6 +32,9 @@ title:  STAT 832
 ---
 
 #### Announcments  
+2017-02-15: Do the [sixth set of exercises](hw6)
+to be turned in Wednesday 2017-02-22.
+
 2017-02-08: Do the [fifth set of exercises](hw5)
 to be turned in Wednesday 2017-02-15.
 
@@ -40,7 +43,6 @@ to be turned in Wednesday 2017-02-08.
 
 2017-01-25: Do the [third set of exercises](hw3)
 to be turned in Wednesday 2017-02-01. 
-
 
 2017-01-18: Do the [second set of exercises](hw2)
 to be turned in Wednesday 2017-01-25. The data exercises should 
