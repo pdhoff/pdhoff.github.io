@@ -1,4 +1,5 @@
 #### Written exercises 
+
 Do  exercises 1 and 2 from the 
 notes on factor analysis, in addition to the following:
 
