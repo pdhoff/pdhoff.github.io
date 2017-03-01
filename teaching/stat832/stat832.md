@@ -32,6 +32,9 @@ title:  STAT 832
 ---
 
 #### Announcments  
+2017-03-01: Do the [eighth set of exercises](hw8)
+to be turned in Wednesday 2017-03-08.
+
 2017-02-22: Do the [seventh set of exercises](hw7)
 to be turned in Wednesday 2017-03-01.
 
