@@ -32,6 +32,11 @@ title:  STAT 832
 ---
 
 #### Announcements  
+2017-03-29: Do the tenth set of exercises, 
+exercises 6,7 and 8 in the copula notes,  
+to be turned in Wednesday 2017-04-05.
+
+
 2017-03-22: Do the [ninth set of exercises](hw9)
 to be turned in Wednesday 2017-03-29.
  
