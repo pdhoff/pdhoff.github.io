@@ -32,6 +32,11 @@ title:  STAT 832
 ---
 
 #### Announcements  
+2017-04-05: Do the eleventh set of exercises,
+exercises 1,2,4 and 5 in the multivariate regression notes, 
+to be turned in Wednesday 2017-04-12.
+
+
 2017-03-29: Do the tenth set of exercises, 
 exercises 6,7 and 8 in the copula notes,  
 to be turned in Wednesday 2017-04-05.
