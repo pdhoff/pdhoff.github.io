@@ -32,6 +32,11 @@ title:  STAT 832
 ---
 
 #### Announcements  
+2017-04-12: Do the twelfth and final set of exercises,
+exercises 1,2a and 3  in the multilinear model notes,
+to be turned in Wednesday 2017-04-19.
+
+
 2017-04-05: Do the eleventh set of exercises,
 exercises 1,2,4 and 5 in the multivariate regression notes, 
 to be turned in Wednesday 2017-04-12.
