@@ -17,9 +17,9 @@ title:  STAT 538
 
 #### Course information 
 * Lecture: Tue, Thu 11:45-01:00, Old Chem 116
-* Instructor: [Peter Hoff](https://pdhoff.github.io/) - office hours Mon, Wed 10:30-11:30 Rm 219 
-* TA:   
-* TA:
+* Instructor: [Peter Hoff](https://pdhoff.github.io/) - office hours Mon, Wed 10:30-11:30 AM Rm 219 
+* TA: Phil White - office hours Tue 4:00-5:00 PM, Thu 10:00-11:00 AM Rm 211A
+* TA: Sheng Jiang - office hour Wed 8:00 - 9:00 PM Rm 211A
 
 ---
 
@@ -38,7 +38,10 @@ title:  STAT 538
 ---
 
 
-#### Tentative schedule of topics 
+#### Tentative schedule of topics  
+1. Review of probability 
+   1. Probability distributions
+   2. Expectations 
 1. One sample inference  
    1. confidence intervals via probability inequalities
    2. point estimates
@@ -50,7 +53,7 @@ title:  STAT 538
    2. model comparison and likelihood ratio tests  
    3. asymptotic efficiency 
    4. asymptotic confidence intervals
-3. Multi-sample issues   
+3. Multi-sample inference   
    1. multiple comparisons
    2. shrinkage estimation 
    3. hierarchical models
