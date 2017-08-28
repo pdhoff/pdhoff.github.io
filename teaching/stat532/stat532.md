@@ -67,7 +67,7 @@ title:  STAT 538
 
 #### Evaluation
 * 15% Homework  
-* 50% Midterm exams (2017- - and 2017- -, in class)
+* 50% Midterm exams (2017-09-28 and 2017-11-02, in class)
 * 35% Final exam (2017-12-17, 2:00-5:00)
 
 Late homework receives a 10% penalty per day. 
