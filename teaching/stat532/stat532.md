@@ -24,6 +24,7 @@ title:  STAT 538
 ---
 
 #### Course materials 
+* [Homework](http://www.stat.duke.edu/~pdh10/Teaching/532/homework.pdf) 
 * [Lecture notes, code and data](http://www.stat.duke.edu/~pdh10/Teaching/532/) 
 * [All of Statistics (Wasserman)](http://www.springer.com/us/book/9780387402727)
 * [All of Nonparametric Statistics (Wasserman)](http://www.springer.com/us/book/9780387251455) 
@@ -32,7 +33,12 @@ title:  STAT 538
 
 ---
 
-#### Announcements  
+#### Announcements    
+2017-09-07: [Homework 2](http://www.stat.duke.edu/~pdh10/Teaching/532/homework.pdf) is posted: Do problems 9-14. Scan over AOS Chapters 1-3 and make 
+sure most things look familiar. 
+
+2017-08-31: [Homework 1](http://www.stat.duke.edu/~pdh10/Teaching/532/homework.pdf) is posted: Do problems 1-8. 
+
 2017-08-29: Come to class. 
 
 ---
