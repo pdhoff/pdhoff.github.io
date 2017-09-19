@@ -34,6 +34,8 @@ title:  STAT 538
 ---
 
 #### Announcements     
+2017-09-19: Look over the new notes and review the corresponding material in AOS. 
+
 2017-09-14: [Homework 3](http://www.stat.duke.edu/~pdh10/Teaching/532/homework.pdf) is posted: Do problems 15-19. Read  AOS Chapter 4.  
 
 2017-09-07: [Homework 2](http://www.stat.duke.edu/~pdh10/Teaching/532/homework.pdf) is posted: Do problems 9-14. Scan over AOS Chapters 1-3 and make 
