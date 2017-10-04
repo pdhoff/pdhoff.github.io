@@ -33,7 +33,11 @@ title:  STAT 538
 
 ---
 
-#### Announcements     
+#### Announcements      
+2017-10-05: We will be starting CDF estimation and bootstrap methods. Do the new hoework problems, to be turned in 10-12. 
+2017-10-03: Two problems have been added to the homework, and a few more will be added Thursday. 
+            These problems will be due 10-12. 
+
 2017-09-21: Review chapters 4 and 5, and do all the new homework problems. 
 
 2017-09-19: Look over the new notes and review the corresponding material in AOS. 
