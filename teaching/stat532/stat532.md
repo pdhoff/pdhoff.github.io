@@ -34,7 +34,10 @@ title:  STAT 538
 ---
 
 #### Announcements      
-2017-10-12:  Do the new homework problems, to be turned in 10-19.
+
+2017-10-17: Ofc hours on Wed changed to drop-in office hours Thursday, and homework will be due on Friday. We will talk about hypothesis testing this week - see the notes on the website. 
+
+2017-10-12:  Do the new homework problems, to be turned in 10-20.
 
 2017-10-05: We will be starting CDF estimation and bootstrap methods. Do the new homework problems, to be turned in 10-12.   
 
