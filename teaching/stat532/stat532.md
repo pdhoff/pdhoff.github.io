@@ -34,6 +34,7 @@ title:  STAT 538
 ---
 
 #### Announcements      
+2017-10-19: Four new homework problems added, due 10-26.  Likelihood-based inference is coming up next. 
 
 2017-10-17: Ofc hours on Wed changed to drop-in office hours Thursday, and homework will be due on Friday. We will talk about hypothesis testing this week - see the notes on the website. 
 
