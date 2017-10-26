@@ -35,6 +35,9 @@ title:  STAT 538
 
 #### Announcements      
 
+2017-10-26 Three new homework problems have been posted, due next Thursday 
+11-02. 
+
 2017-10-24: Read the notes and book chapter on maximum likelihood. 
 
 2017-10-19: Four new homework problems added, due 10-26.  Likelihood-based inference is coming up next. 
