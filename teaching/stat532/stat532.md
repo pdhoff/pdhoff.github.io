@@ -34,8 +34,9 @@ title:  STAT 538
 ---
 
 #### Announcements      
+2017-11-07: Continue reading the book and notes on MLEs. Do all the new homework problems, due next Tuesday 11-14. 
 
-2017-10-26 Three new homework problems have been posted, due next Thursday 
+2017-10-26: Three new homework problems have been posted, due next Thursday 
 11-02. 
 
 2017-10-24: Read the notes and book chapter on maximum likelihood. 
