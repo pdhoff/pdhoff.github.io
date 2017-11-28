@@ -34,6 +34,9 @@ title:  STAT 538
 ---
 
 #### Announcements      
+2017-11-28: Final three homework problems assigned, due 12-5.  Read the notes 
+on multiple testing. 
+
 2017-11-16: New homework problems assigned, due 11-28. Read the notes on model selection. 
 
 2017-11-07: Continue reading the book and notes on MLEs. Do all the new homework problems, due next Tuesday 11-14. 
