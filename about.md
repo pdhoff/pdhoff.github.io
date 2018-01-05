@@ -19,9 +19,11 @@ B.S. in Mathematics (1993), Indiana University
 
 ### Current mentees
 
-[Yanjun He](http://www.stat.washington.edu/people/people.php?id=415)     
+[Michael Jauch](https://stat.duke.edu/people/michael-jauch)  
+[Kyle Burris](https://burrisk.github.io/research/)   
+[Yanjun He](http://www.stat.washington.edu/people/people.php?id=415)      
 [Chaoyu Yu](http://students.washington.edu/chaoyuyu/)   
-[Maryclare Griffin](http://www.stat.washington.edu/people/mgrffn/)   
+[Maryclare Griffin](https://maryclare.github.io/)
 
 
 ### Past mentees

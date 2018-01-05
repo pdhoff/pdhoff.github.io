@@ -1,0 +1,495 @@
+\begin{thebibliography}{10}
+
+\bibitem{bronner2010array}
+M.P. Bronner, M.~Skacel, D.A. Crispin, P.D. Hoff, M.J. Emond, L.A. Lai, R.R.
+  Tubbs, J.N. O'Sullivan, P.S. Rabinovitch, and T.A. Brentnall.
+\newblock {\bf Array-based comparative genomic hybridization in ulcerative
+  colitis neoplasia: single non-dysplastic biopsies distinguish progressors
+  from non-progressors}.
+\newblock {\em Modern Pathology}, 23:1624--1633, 2010.
+
+\bibitem{fosdick_hoff_2014}
+B.K. Fosdick and P.D. Hoff.
+\newblock {\bf Separable factor analysis with applications to mortality data}.
+\newblock {\em Ann. Appl. Stat.}, 8(1):120--147, 2014.
+
+\bibitem{fosdick_hoff_2015}
+B.K. Fosdick and P.D. Hoff.
+\newblock {\bf Testing and Modeling Dependencies Between a Network and Nodal
+  Attributes}.
+\newblock {\em J. Amer. Statist. Assoc.}, 110(511):1047--1056, 2015.
+
+\bibitem{franks_hoff_2016}
+A.~Franks and P.D. Hoff.
+\newblock {\bf Shared subspace models for multi-group covariance estimation}.
+\newblock 2016.
+
+\bibitem{gerard_hoff_2015a}
+D.~Gerard and P.D. Hoff.
+\newblock {\bf Equivariant minimax dominators of the {MLE} in the array normal
+  model}.
+\newblock {\em J. Multivariate Anal.}, 137:32--49, 2015.
+
+\bibitem{gerard_hoff_2016}
+D.~Gerard and P.D. Hoff.
+\newblock {\bf A higher-order {LQ} decomposition for separable covariance
+  models}.
+\newblock {\em Linear Algebra Appl.}, 505:57--84, 2016.
+
+\bibitem{gerard_hoff_2017}
+D.~Gerard and P.D. Hoff.
+\newblock {\bf Adaptive higher-order spectral estimators}.
+\newblock {\em Electron. J. Statist.}, 11(2):3703--3737, 2017.
+
+\bibitem{griffin_hoff_2017}
+M.~Griffin and P.D. Hoff.
+\newblock {\bf LANOVA penalization for unreplicated data}.
+\newblock 2017.
+
+\bibitem{griffin_hoff_2017b}
+M.~Griffin and P.D. Hoff.
+\newblock {\bf Testing sparsity-inducing penalties}.
+\newblock 2017.
+
+\bibitem{haigis_2004_pnas}
+K.M. Haigis, P.D. Hoff, A.~White, A.R. Shoemaker, R.B. Halberg, and W.F. Dove.
+\newblock {\bf Tumor regionality in the mouse intestine reflects the mechanism
+  of loss of {APC} function}.
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America}, 101(26):9769, 2004.
+
+\bibitem{halberg2000tumorigenesis}
+R.B. Halberg, D.S. Katzung, P.D. Hoff, A.R. Moser, C.E. Cole, R.A. Lubet, L.A.
+  Donehower, R.F. Jacoby, and W.F. Dove.
+\newblock {\bf Tumorigenesis in the multiple intestinal neoplasia mouse:
+  redundancy of negative regulators and specificity of modifiers}.
+\newblock {\em Proceedings of the National Academy of Sciences of the United
+  States of America}, 97(7):3461, 2000.
+
+\bibitem{harmon_hoff_2015}
+J.W. Harmon and P.D. Hoff.
+\newblock {\bf A Pivot-Based Improvement to Sandwich-Based Confidence
+  Intervals}.
+\newblock Technical Report 639, Department of Statistics, University of
+  Washington, 2015.
+
+\bibitem{he_hoff_2017}
+Y.~He and P.D. Hoff.
+\newblock {\bf Multiplicative coevolution regression models for longitudinal
+  networks and nodal attributes}.
+\newblock 2017.
+
+\bibitem{hoff_2000_thesis}
+P.D. Hoff.
+\newblock {\em Constrained Nonparametric Estimation via Mixtures}.
+\newblock PhD thesis, University of Wisconsin-Madison, Madison, Wisconsin,
+  2000.
+
+\bibitem{hoff_2000_jcgs}
+P.D. Hoff.
+\newblock {\bf Constrained nonparametric maximum likelihood via mixtures}.
+\newblock {\em J. Comput. Graph. Statist.}, 9(4):633--641, 2000.
+
+\bibitem{hoff_2003_biometrika}
+P.D. Hoff.
+\newblock {\bf Bayesian methods for partial stochastic orderings}.
+\newblock {\em Biometrika}, 90(2):303--317, 2003.
+
+\bibitem{hoff_2003_aos}
+P.D. Hoff.
+\newblock {\bf Nonparametric estimation of convex models via mixtures}.
+\newblock {\em Ann. Statist.}, 31(1):174--200, 2003.
+
+\bibitem{hoff_2003_tr}
+P.D. Hoff.
+\newblock {\bf Nonparametric Modeling of Hierarchically Exchangeable Data}.
+\newblock Technical Report 421, Department of Statistics, University of
+  Washington, 2003.
+
+\bibitem{hoff_2003_nap}
+P.D. Hoff.
+\newblock {\bf Random effects models for network data}.
+\newblock In {\em Dynamic Social Network Modeling and Analysis: Workshop
+  Summary and Papers}, pages 303--312. The National Academies Press, 2003.
+
+\bibitem{hoff_2004_jrssb}
+P.D. Hoff.
+\newblock {\bf Discussion of "{C}lustering Objects on Subsets of Attributes",
+  by {F}riedman and {M}eulman}.
+\newblock {\em Journal of the Royal Statistical Society, Series B}, 66(4):845,
+  2004.
+
+\bibitem{hoff_2005_jasa}
+P.D. Hoff.
+\newblock {\bf Bilinear mixed-effects models for dyadic data}.
+\newblock {\em J. Amer. Statist. Assoc.}, 100(469):286--295, 2005.
+
+\bibitem{hoff_2005_biometrics}
+P.D. Hoff.
+\newblock {\bf Subset clustering of binary sequences, with an application to
+  genomic abnormality data}.
+\newblock {\em Biometrics}, 61(4):1027--1036, 2005.
+
+\bibitem{hoff_2006}
+P.D. Hoff.
+\newblock {\bf Model-based subspace clustering}.
+\newblock {\em Bayesian Anal.}, 1(2):321--344, 2006.
+
+\bibitem{hoff_2007_jrssa}
+P.D. Hoff.
+\newblock {\bf Discussion of "{M}odel-Based Clustering for Social Networks", by
+  {H}andcock, {R}aftery and {T}antrum}.
+\newblock {\em Journal of the Royal Statistical Society, Series A}, 170(2):339,
+  2007.
+
+\bibitem{eigenmodel}
+P.D. Hoff.
+\newblock {\em eigenmodel: Semiparametric factor and regression models for
+  symmetric relational data}, 2007.
+
+\bibitem{hoff_2007_aoas}
+P.D. Hoff.
+\newblock {\bf Extending the rank likelihood for semiparametric copula
+  estimation}.
+\newblock {\em Ann. Appl. Stat.}, 1(1):265--283, 2007.
+
+\bibitem{hoff_2007_jasa}
+P.D. Hoff.
+\newblock {\bf Model averaging and dimension selection for the singular value
+  decomposition}.
+\newblock {\em J. Amer. Statist. Assoc.}, 102(478):674--685, 2007.
+
+\bibitem{sbgcop}
+P.D. Hoff.
+\newblock {\em sbgcop: Semiparametric Bayesian Gaussian copula estimation and
+  imputation}, 2007.
+
+\bibitem{hoff_2008_nips}
+P.D. Hoff.
+\newblock {\bf Modeling homophily and stochastic equivalence in symmetric
+  relational data}.
+\newblock In J.C. Platt, D.~Koller, Y.~Singer, and S.~Roweis, editors, {\em
+  Advances in Neural Information Processing Systems 20}, pages 657--664. MIT
+  Press, Cambridge, MA, 2008.
+
+\bibitem{hoff_2008_isba}
+P.D. Hoff.
+\newblock {\bf Rank Likelihood Estimation for Continuous and Discrete Data}.
+\newblock {\em ISBA Bulletin}, 15(1):8--10, 2008.
+
+\bibitem{hoff_2009_springer}
+P.D. Hoff.
+\newblock {\em A first course in {B}ayesian statistical methods}.
+\newblock Springer Texts in Statistics. Springer, New York, 2009.
+
+\bibitem{hoff_2009_jrssb}
+P.D. Hoff.
+\newblock {\bf A Hierarchical Eigenmodel for Pooled Covariance Estimation}.
+\newblock {\em Journal of the Royal Statistical Society, Series B},
+  71(5):971--992, 2009.
+
+\bibitem{hoff_2009_cmot}
+P.D. Hoff.
+\newblock {\bf Multiplicative latent factor models for description and
+  prediction of social networks}.
+\newblock {\em Computational \& Mathematical Organization Theory},
+  15(4):261--272, 2009.
+
+\bibitem{hoff_2009_jcgs}
+P.D. Hoff.
+\newblock {\bf Simulation of the {M}atrix {B}ingham-von {M}ises-{F}isher
+  {D}istribution, {W}ith {A}pplications to {M}ultivariate and {R}elational
+  {D}ata}.
+\newblock {\em Journal of Computational and Graphical Statistics},
+  18(2):438--456, 2009.
+
+\bibitem{hoff_2011_csda}
+P.D. Hoff.
+\newblock {\bf Hierarchical multilinear models for multiway data}.
+\newblock {\em Computational Statistics \& Data Analysis}, 55:530--543, 2011.
+
+\bibitem{hoff_2011_ba}
+P.D. Hoff.
+\newblock {\bf Separable covariance arrays via the {T}ucker product, with
+  applications to multivariate relational data}.
+\newblock {\em Bayesian Analysis}, 6:179--196, 2011.
+
+\bibitem{rstiefel}
+P.D. Hoff.
+\newblock {\em rstiefel: Random orthonormal matrix generation on the Stiefel
+  manifold}, 2012.
+
+\bibitem{hoff_2013_vignette}
+P.D. Hoff.
+\newblock {\bf Bayesian analysis of matrix data with rstiefel}.
+\newblock R-vignette, 2013.
+
+\bibitem{hoff_2013_ba}
+P.D. Hoff.
+\newblock {\bf Comment on ``Bayesian Nonparametric Inference - Why and How'' by
+  M\"uller and Mitra}.
+\newblock {\em Bayesian Analysis}, 8(2):311--318, 2013.
+
+\bibitem{hoff_2015_b}
+P.D. Hoff.
+\newblock {\bf Dyadic data analysis with amen}.
+\newblock Technical Report 638, Department of Statistics, University of
+  Washington, 2015.
+
+\bibitem{hoff_2015_a}
+P.D. Hoff.
+\newblock {\bf Multilinear tensor regression for longitudinal relational data}.
+\newblock {\em Ann. Appl. Stat.}, 9(3):1169--1193, 2015.
+
+\bibitem{MR3498040}
+P.D. Hoff.
+\newblock {\bf Equivariant and scale-free {T}ucker decomposition models}.
+\newblock {\em Bayesian Anal.}, 11(3):627--648, 2016.
+
+\bibitem{hoff_2016a}
+P.D. Hoff.
+\newblock {\bf Limitations on detecting row covariance in the presence of
+  column covariance}.
+\newblock {\em J. Multivariate Anal.}, 152:249--258, 2016.
+
+\bibitem{hoff_2017}
+P.D. Hoff.
+\newblock {\bf Lasso, fractional norm and structured sparse estimation using a
+  Hadamard product parametrization}.
+\newblock {\em Computational Statistics and Data Analysis}, pages 186--198,
+  2017.
+
+\bibitem{amen}
+P.D. Hoff, B.K. Fosdick, A.~Volfovsky, and K.~Stovel.
+\newblock {\em amen: Additive and multiplicative effects modeling of networks
+  and relational data}, 2012.
+
+\bibitem{hoff_fosdick_volfovsky_stovel_2013}
+P.D. Hoff, B.K. Fosdick, A.~Volfovsky, and K.~Stovel.
+\newblock {\bf Likelihoods for fixed rank nomination networks}.
+\newblock {\em Network Science}, 1(3):253--277, 2013.
+
+\bibitem{hoff_halberg_shedlovsky_dove_newton_2002_csbs}
+P.D. Hoff, R.B. Halberg, A.~Shedlovsky, W.F. Dove, and M.A. Newton.
+\newblock {\bf Identifying carriers of a genetic modifier using nonparametric
+  {B}ayesian methods}.
+\newblock In {\em Case studies in {B}ayesian statistics, {V}ol.\ {V}
+  ({P}ittsburgh, {PA}, 1999)}, volume 162 of {\em Lecture Notes in Statist.},
+  pages 329--330. Springer, New York, 2002.
+
+\bibitem{hoff_niu_2012_ss}
+P.D. Hoff and X.~Niu.
+\newblock {\bf A Covariance Regression Model}.
+\newblock {\em Statistica Sinica}, 22:729--753, 2012.
+
+\bibitem{hoff_niu_wellner_2014}
+P.D. Hoff, X.~Niu, and J.A. Wellner.
+\newblock {\bf Information bounds for {G}aussian copulas}.
+\newblock {\em Bernoulli}, 20(2):604--622, 2014.
+
+\bibitem{hoff_raftery_handcock_2002_jasa}
+P.D. Hoff, A.E. Raftery, and M.S. Handcock.
+\newblock {\bf Latent space approaches to social network analysis}.
+\newblock {\em J. Amer. Statist. Assoc.}, 97(460):1090--1098, 2002.
+
+\bibitem{hoff_wakefield_2013}
+P.D. Hoff and J.~Wakefield.
+\newblock {\bf Bayesian sandwich posteriors for pseudo-true parameters}.
+\newblock {\em J. Statist. Plann. Inference}, 143(10):1638--1642, 2013.
+
+\bibitem{hoff_2004_pa}
+P.D. Hoff and M.D. Ward.
+\newblock {\bf Modeling dependencies in international relations networks}.
+\newblock {\em Political Analysis}, 12(2):160--175, 2004.
+
+\bibitem{hoff_ward_2004_isa}
+P.D. Hoff and M.D. Ward.
+\newblock {\bf Random, Latent, and Correlated: Networks in International
+  Relations}.
+\newblock In {\em Annual Meeting of the International Studies Association},
+  Montreal, March 2004. International Studies Association.
+
+\bibitem{hoff_ward_2005_isa}
+P.D. Hoff and M.D. Ward.
+\newblock {\bf Analyzing Dependencies in International Relations: Commerce,
+  Capitalism, Conflict, Cooperation, and Democracy}.
+\newblock In {\em Annual Meeting of the International Studies Association},
+  Honolulu, March 2005. International Studies Association.
+
+\bibitem{hoff_yu_2017}
+P.D. Hoff and C.~Yu.
+\newblock {\bf Exact adaptive confidence intervals for linear regression
+  coefficients}.
+\newblock 2017.
+
+\bibitem{kessler_hoff_dunson_2012}
+D.C. Kessler, P.D. Hoff, and D.B. Dunson.
+\newblock {\bf Marginally Specified Priors for Nonparametric Bayesian
+  Estimation}.
+\newblock {\em Journal of the Royal Statistical Society, Series B},
+  77(1):35--58, 2014.
+
+\bibitem{kessler_hoff_dunson_2015}
+D.C. Kessler, P.D. Hoff, and D.B. Dunson.
+\newblock {\bf Marginally specified priors for non-parametric {B}ayesian
+  estimation}.
+\newblock {\em J. R. Stat. Soc. Ser. B. Stat. Methodol.}, 77(1):35--58, 2015.
+
+\bibitem{koprowicz_emerson_hoff_2005_tr}
+K.~Koprowicz, S.E. Emerson, and P.D. Hoff.
+\newblock {\bf A Comparison of Parametric and Coarsened Bayesian Interval
+  Estimation in the Presence of a Known Mean-Variance Relationship}.
+\newblock Technical Report 251, Department of Biotatistics, University of
+  Washington, 2005.
+
+\bibitem{krivitsky_handcock_raftery_hoff_2009_socnet}
+P.N. Krivitsky, M.S. Handcock, A.E. Raftery, and P.D. Hoff.
+\newblock {\bf Representing degree distributions, clustering, and homophily in
+  social networks with latent cluster random effects models}.
+\newblock {\em Social networks}, 31(3):204--213, 2009.
+
+\bibitem{logan_hoff_newton_2008}
+J.A. Logan, P.D. Hoff, and M.A. Newton.
+\newblock {\bf Two-sided estimation of mate preferences for similarities in
+  age, education, and religion}.
+\newblock {\em J. Amer. Statist. Assoc.}, 103(482):559--569, 2008.
+
+\bibitem{minhas_hoff_ward_2016b}
+S.~Minhas, P.D. Hoff, and M.D. Ward.
+\newblock {\bf Inferential Approaches for Network Analyses: AMEN for Latent
+  Factor Models}.
+\newblock 2016.
+
+\bibitem{minhas_hoff_ward_2016}
+S.~Minhas, P.D. Hoff, and M.D. Ward.
+\newblock {\bf A new approach to analyzing coevolving longitudinal networks in
+  international relations}.
+\newblock {\em Journal of Peace Research}, pages 491--505, 2016.
+
+\bibitem{minhas_hoff_ward_2017}
+S.~Minhas, P.D. Hoff, and M.D. Ward.
+\newblock {\bf Influence networks in international relations}.
+\newblock 2017.
+
+\bibitem{niu_hoff_2013}
+X.~Niu and P.D. Hoff.
+\newblock {\bf Simultaneous Mean and Covariance Modeling of Chronic Kidney
+  Disease}, 2013.
+
+\bibitem{oron_azriel_hoff_2011_ijbs}
+A.P. Oron, D.~Azriel, and P.D. Hoff.
+\newblock {\bf Dose-finding designs: the role of convergence properties}.
+\newblock {\em International Journal of Biostatistics}, 7(1):article 39, 2011.
+
+\bibitem{oron_hoff_2007_tr}
+A.P. Oron and P.D. Hoff.
+\newblock {\bf {K}ruskal-{W}allis and {F}riedman type tests for nested effects
+  in hierarchical designs}.
+\newblock Technical Report~68, Center for Statistics and the Social Sciences,
+  University of Washington, 2007.
+
+\bibitem{oron_hoff_2009_sim}
+A.P. Oron and P.D. Hoff.
+\newblock {\bf The $k$-in-a-row Up-and-down Design, Revisited}.
+\newblock {\em Statistics in Medicine}, 28(13):1805--1820, 2009.
+
+\bibitem{oron_hoff_2012}
+A.P. Oron and P.D. Hoff.
+\newblock {\bf Small-Sample Behavior of Novel Phase {I} Cancer Trial Designs}.
+\newblock {\em Clinical Trials}, 10(1):63--80, 2013.
+
+\bibitem{pearson2007modeling}
+CR~Pearson, AE~Kurth, S.~Cassels, DP~Martin, JM~Simoni, P.~Hoff, E.~Matediana,
+  and S.~Gloyd.
+\newblock {\bf Modeling {HIV} transmission risk among Mozambicans prior to
+  their initiating highly active antiretroviral therapy}.
+\newblock {\em AIDS care}, 19(5):594--604, 2007.
+
+\bibitem{pearson2007randomized}
+C.R. Pearson, M.A. Micek, J.M. Simoni, P.D. Hoff, E.~Matediana, D.P. Martin,
+  and S.S. Gloyd.
+\newblock {\bf Randomized control trial of peer-delivered, modified directly
+  observed therapy for {HAART} in Mozambique}.
+\newblock {\em JAIDS Journal of Acquired Immune Deficiency Syndromes},
+  46(2):238, 2007.
+
+\bibitem{pearson2007assessing}
+C.R. Pearson, J.M. Simoni, P.~Hoff, A.E. Kurth, and D.P. Martin.
+\newblock {\bf Assessing antiretroviral adherence via electronic drug
+  monitoring and self-report: an examination of key methodological issues}.
+\newblock {\em AIDS and Behavior}, 11(2):161--173, 2007.
+
+\bibitem{raftery_niu_hoff_yeung_2010_tr}
+A.E. Raftery, X.~Niu, P.D. Hoff, and K.Y. Yeung.
+\newblock {\bf Fast Inference for the Latent Space Network Model Using a
+  Case-Control Approximate Likelihood}.
+\newblock {\em Journal of Computational and Graphical Statistics}, 21:901--919,
+  2012.
+
+\bibitem{shepel1998genetic}
+L.A. Shepel, H.~Lan, J.D. Haag, G.M. Brasic, M.E. Gheen, J.S. Simon, P.~Hoff,
+  M.A. Newton, and M.N. Gould.
+\newblock {\bf Genetic identification of multiple loci that control breast
+  cancer susceptibility in the rat}.
+\newblock {\em Genetics}, 149(1):289, 1998.
+
+\bibitem{shortreed_handcock_hoff_2006_meth}
+S.~Shortreed, M.S. Handcock, and P.~Hoff.
+\newblock {\bf Positional estimation within a latent space model for networks}.
+\newblock {\em Methodology: European Journal of Research Methods for the
+  Behavioral and Social Sciences}, 2(1):24--33, 2006.
+
+\bibitem{volfovsky_hoff_2014}
+A.~Volfovsky and P.D. Hoff.
+\newblock {\bf Hierarchical array priors for {ANOVA} decompositions of
+  cross-classified data}.
+\newblock {\em Ann. Appl. Stat.}, 8(1):19--47, 2014.
+
+\bibitem{volfovsky_hoff_2015}
+A.~Volfovsky and P.D. Hoff.
+\newblock {\bf Testing for Nodal Dependence in Relational Data Matrices}.
+\newblock {\em J. Amer. Statist. Assoc.}, 110(511):1037--1046, 2015.
+
+\bibitem{ward_hoff_2007_jpr}
+M.D. Ward and P.D. Hoff.
+\newblock {\bf Persistent patterns of international commerce}.
+\newblock {\em Journal of Peace Research}, 44(2):157, 2007.
+
+\bibitem{ward_hoff_2008_ccm}
+M.D. Ward and P.D. Hoff.
+\newblock {\bf Analyzing Dependencies in Geo-Economics and Geo-Politics}.
+\newblock In {\em War, Peace and Security}, pages 133--160. Emerald Group
+  Publishing, Bingley, UK, 2008.
+
+\bibitem{ward_hoff_lofdahl_2003_nap}
+M.D Ward, P.D. Hoff, and C.L. Lofdahl.
+\newblock {\bf Identifying international networks: latent spaces and
+  imputation}.
+\newblock In {\em Dynamic Social Network Modeling and Analysis: Workshop
+  Summary and Papers}, pages 345--362. The National Academies Press, 2003.
+
+\bibitem{westveld_hoff_2005_apsa}
+A.H. Westveld and P.D. Hoff.
+\newblock {\bf Statistical Methodology for Longitudinal Social Network Data}.
+\newblock In {\em Annual Meeting of the American Political Science
+  Association}, Washington, D.C., September 2005. American Political Science
+  Association.
+
+\bibitem{westveld_hoff_2011_aoas}
+A.H. Westveld and P.D. Hoff.
+\newblock {\bf A Mixed Effects Model for Longitudinal Relational and Network
+  Data, with Applications to International Trade and Conflict}.
+\newblock {\em Annals of Applied Statistics}, 5:843--872, 2011.
+
+\bibitem{westveld_hoff_2010_arxiv}
+A.H. Westveld and P.D. Hoff.
+\newblock {\bf Modeling of the learning process in centipede games}.
+\newblock {\em Stat}, 2(1):242--254, 2013.
+
+\bibitem{yu_hoff_2017}
+C.~Yu and P.D. Hoff.
+\newblock {\bf Adaptive multigroup confidence intervals with constant
+  coverage}.
+\newblock {\em Biometrika}, to appear, 2017.
+
+\end{thebibliography}

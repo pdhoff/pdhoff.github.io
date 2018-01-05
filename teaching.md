@@ -8,12 +8,12 @@ permalink: /teaching/
 
 #### Current teaching
 
-[STAT 532](stat532/stat532.html) Theory of Inference 
+[STAT 832](stat832/stat832.html) Multivariate Statistical Analysis
+
 
 #### Past teaching
 
-[STAT 832](stat832/stat832.html) Multivariate Statistical Analysis
-
+[STAT 532](stat532/stat532.html) Theory of Inference
 
 [UW STAT 421](http://www.stat.washington.edu/~hoff/courses/421-502) Applied Statistics and Experimental Design 
 

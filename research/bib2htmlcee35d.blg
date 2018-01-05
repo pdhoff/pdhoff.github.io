@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: ./bib2htmlcee35d.aux
+The style file: web.bst
+Database file #1: pdhbib.bib
+Repeated entry---line 49 of file pdhbib.bib
+ : @article{yu_hoff_2017
+ :                      ,
+I'm skipping whatever remains of this entry
+Warning--empty journal in franks_hoff_2016
+Warning--empty journal in griffin_hoff_2017
+Warning--empty journal in griffin_hoff_2017b
+Warning--empty journal in he_hoff_2017
+Warning--empty journal in hoff_yu_2017
+Warning--empty journal in minhas_hoff_ward_2016b
+Warning--empty journal in minhas_hoff_ward_2017
+You've used 83 entries,
+            2134 wiz_defined-function locations,
+            911 strings with 16112 characters,
+and the built_in function-call counts, 27176 in all, are:
+= -- 2675
+> -- 1222
+< -- 13
++ -- 492
+- -- 400
+* -- 2089
+:= -- 4547
+add.period$ -- 253
+call.type$ -- 83
+change.case$ -- 364
+chr.to.int$ -- 0
+cite$ -- 90
+duplicate$ -- 1045
+empty$ -- 2152
+format.name$ -- 400
+if$ -- 5585
+int.to.chr$ -- 0
+int.to.str$ -- 83
+missing$ -- 72
+newline$ -- 413
+num.names$ -- 168
+pop$ -- 375
+preamble$ -- 1
+purify$ -- 364
+quote$ -- 0
+skip$ -- 669
+stack$ -- 0
+substring$ -- 1794
+swap$ -- 223
+text.length$ -- 13
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 330
+warning$ -- 7
+while$ -- 270
+width$ -- 85
+write$ -- 899
+(There was 1 error message)
