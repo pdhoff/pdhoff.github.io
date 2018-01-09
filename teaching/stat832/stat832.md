@@ -44,7 +44,7 @@ title:  STAT 832
 1. Unsupervised analysis
    1. Matrix decompositions and PCA  
    2. Covariance estimation
-   3. Factor analsysis
+   3. Factor analysis
    4. ICA 
    5. Kernel methods and clustering
 
