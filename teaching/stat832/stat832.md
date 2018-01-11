@@ -19,7 +19,7 @@ title:  STAT 832
 * Instructor: [Peter Hoff](https://pdhoff.github.io/) 
 * TA: [Xu Chen](https://stat.duke.edu/people/xu-chen) 
 * Lecture: MW 10:05-11:20, Perkins LINK 088
-* Office hours: TTh 10:30-11:30 Rm 219 (PH),   AB  C:DE-F:GH Rm 2IJ (XC)     
+* Office hours: Tue, Thu 10:30-11:30 AM Rm 219 (PH),   Tue 7:00-8:00 PM, Wed 12:30-1:30 PM Rm 211A (XC)     
 
 ---
 
