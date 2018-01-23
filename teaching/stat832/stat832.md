@@ -34,7 +34,8 @@ title:  STAT 832
 #### Announcements  
 
 2018-01-22: Do exercises 6 through 11 in the course notes on
-eigendcompositions, to be turned in Monday 2018-01-29.
+eigendcompositions, to be turned in Monday 2018-01-29. Make sure 
+you are getting the exercises from notes dated 1/22 or later. 
 
 
 2018-01-10: Do exercises 1 through 5 in the course notes on
