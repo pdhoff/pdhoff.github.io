@@ -37,7 +37,7 @@ Specifically:
 The `phoneme` data contains $n=4509$ periodograms, each periodogram
 consisting of $p=256$ values and representing an audio sample of
 someone speaking a sound. More information on these data can be found
-[here](https://web.stanford.edu/~hastie/ElemStatLearn/datasets/phoneme.info.txt)
+[here](https://web.stanford.edu/~hastie/ElemStatLearn/datasets/phoneme.info.txt). 
 
 1. Obtain the eigenvalues of the sample covariance matrix.
 Make a plot of the ordered eigenvalues and the cumulative proportion
