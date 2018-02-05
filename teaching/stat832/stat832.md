@@ -33,6 +33,12 @@ title:  STAT 832
 
 #### Announcements  
 
+2018-02-05: Do the [fourth set of exercises](hw4), to be turned
+in Monday 2/12. Also start looking for datasets you might want to 
+use for the course project. 
+
+
+
 2018-01-29: Do the [third set of exercises](hw3), to be turned 
 in Monday 2/5. 
 
