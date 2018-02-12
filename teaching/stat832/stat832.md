@@ -19,7 +19,7 @@ title:  STAT 832
 * Instructor: [Peter Hoff](https://pdhoff.github.io/) 
 * TA: [Xu Chen](https://stat.duke.edu/people/xu-chen) 
 * Lecture: MW 10:05-11:20, Perkins LINK 088
-* Office hours: Tue, Thu 10:30-11:30 AM Rm 219 (PH),   Tue 7:00-8:00 PM, Wed 12:30-1:30 PM Rm 211A (XC)     
+* Office hours: Tue, Thu 10:30-11:30 AM Rm 219 (PH),   Sun 5:00-6:00 PM, Fri 10:00-11:00 AM Rm 211A (XC)     
 
 ---
 
@@ -32,6 +32,11 @@ title:  STAT 832
 ---
 
 #### Announcements  
+
+2018-02-12: Do the [fifth set of exercises](hw5), to be turned
+in Monday 2/19. Also, note that [information](project) on the data and paper 
+projects has been added. 
+
 
 2018-02-05: Do the [fourth set of exercises](hw4), to be turned
 in Monday 2/12. Also start looking for datasets you might want to 
@@ -81,8 +86,8 @@ eigendcompositions, to be turned in Wednesday 2018-01-17.
 
 #### Evaluation
 * 60% Homework 
-* 20% Data project
-* 20% Paper project 
+* 20% Data [project](project)
+* 20% Paper [project](project)
 * 10% per-late day penalty (including weekends) 
 
 
