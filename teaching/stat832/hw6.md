@@ -30,5 +30,3 @@ elements of $V$, and the values of $L/n$.
 
 4. Repeat 1 for the case $n=50$ and $p=100$ and interpret the results.
 
-~                                                             
-
