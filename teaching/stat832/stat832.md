@@ -32,6 +32,9 @@ title:  STAT 832
 ---
 
 #### Announcements  
+2018-02-19: Do the [sixth set of exercises](hw6), to be turned
+in Monday 2/26. 
+
 
 2018-02-12: Do the [fifth set of exercises](hw5), to be turned
 in Monday 2/19. Also, note that [information](project) on the data and paper 
