@@ -32,6 +32,8 @@ title:  STAT 832
 ---
 
 #### Announcements  
+2018-3-28: Do exercises 1,3,4 and 6 in the notes on the GLM, to be turned 
+in Friday 4/6. Also work on your projects. 
 
 2018-03-21: Do the [ninth set of exercises](hw9), to be turned
 in Wednesday 3/28. 
