@@ -31,7 +31,11 @@ title:  STAT 832
 
 ---
 
-#### Announcements  
+#### Announcements   
+2018-4-02: 
+{% include mlm.html %}
+
+
 2018-3-28: Do exercises 1,3,4 and 6 in the notes on the GLM, to be turned 
 in Friday 4/6. Also work on your projects. 
 
