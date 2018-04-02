@@ -32,8 +32,7 @@ title:  STAT 832
 ---
 
 #### Announcements   
-2018-4-02: 
-{% include mlm.html %}
+2018-4-02: [ MLM slides](mlm.html) 
 
 
 2018-3-28: Do exercises 1,3,4 and 6 in the notes on the GLM, to be turned 
