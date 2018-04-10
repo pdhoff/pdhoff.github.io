@@ -34,6 +34,8 @@ title:  STAT 832
 #### Announcements   
 2018-4-02: [ MLM slides](mlm.html) 
 
+2018-4-10: Do the final set of exercises:  Exercises 3 and 5 from the MLM notes, and exercises 
+1 and 2 of the copula notes, due 4/18. 
 
 2018-3-28: Do exercises 1,3,4 and 6 in the notes on the GLM, to be turned 
 in Friday 4/6. Also work on your projects. 
