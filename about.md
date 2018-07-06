@@ -22,10 +22,10 @@ B.S. in Mathematics (1993), Indiana University
 [Michael Jauch](https://stat.duke.edu/people/michael-jauch)  
 [Kyle Burris](https://burrisk.github.io/research/)   
 [Chaoyu Yu](http://students.washington.edu/chaoyuyu/)   
-[Maryclare Griffin](https://maryclare.github.io/)
 
 
 ### Past mentees
+[Maryclare Griffin](https://maryclare.github.io/)
 [Yanjun He](http://www.stat.washington.edu/people/people.php?id=415)   
 [Alex Franks](http://afranks.com/)      
 [David Gerard](http://dcgerard.github.io/)    
