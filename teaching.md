@@ -6,14 +6,12 @@ permalink: /teaching/
 ---
 
 
-#### Current teaching
 
-[STAT 832](stat832/stat832.html) Multivariate Statistical Analysis
+#### Courses 
 
+[STAT 832](http://www2.stat.duke.edu/~pdh10/Teaching/832/stat832.html) Multivariate Statistical Analysis
 
-#### Past teaching
-
-[STAT 532](stat532/stat532.html) Theory of Inference
+[STAT 532](http://www2.stat.duke.edu/~pdh10/Teaching/532/stat532.html) Theory of Inference
 
 [UW STAT 421](http://www.stat.washington.edu/~hoff/courses/421-502) Applied Statistics and Experimental Design 
 
