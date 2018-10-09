@@ -15,7 +15,7 @@ B.S. in Mathematics (1993), Indiana University
 
 ### Current mentees
 
-[Michael Jauch](https://stat.duke.edu/people/michael-jauch)  
+[Michael Jauch](https://michaeljauch.github.io/)   
 [Kyle Burris](https://burrisk.github.io/research/)   
 [Anna Yanchenko](https://stat.duke.edu/people/anna-yanchenko-0)
 
