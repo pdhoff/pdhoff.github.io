@@ -13,11 +13,13 @@ M.S. in Statistics (1995), University of Wisconsin
 B.S. in Mathematics (1993), Indiana University   
 
 
-### Current mentees
+### Current PhD mentees
 
 [Michael Jauch](https://michaeljauch.github.io/)   
 [Kyle Burris](https://burrisk.github.io/research/)   
-[Anna Yanchenko](https://stat.duke.edu/people/anna-yanchenko-0)
+[Anna Yanchenko](https://stat.duke.edu/people/anna-yanchenko-0)    
+[Andy McCormack](https://stat.duke.edu/people/andrew-mccormack)
+
 
 
 ### Alumni 
@@ -34,4 +36,10 @@ B.S. in Mathematics (1993), Indiana University
 [Assaf Oron](https://github.com/assaforon)   
 [Anton Westveld](https://westveld-statsci.com/) 
 
+
+### Undergraduate research supervisees  
+
+Chris Suh: [Rduino - A microcontroller interface](https://cran.r-project.org/web/packages/Rduino)     
+Andy Cho: [ICEWSViews - International relations viewer ](https://saxon.stat.duke.edu:3838/pdh10/ICEWSViews/)   
+James Wu: [Matrix completion techniques for anomaly detection in network attacks](https://github.com/DukeStatSci/thesis-sp18-wu-anomalydet/blob/master/docs/thesis.pdf)
 
