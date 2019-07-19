@@ -22,8 +22,8 @@ B.S. in Mathematics (1993), Indiana University
 
 ### Alumni 
 
-[Kyle Burris](https://burrisk.github.io/research/)
-[Michael Jauch](https://michaeljauch.github.io/)
+[Kyle Burris](https://burrisk.github.io/research/)     
+[Michael Jauch](https://michaeljauch.github.io/)     
 [Chaoyu Yu](https://www.linkedin.com/in/chaoyu-yu-154076127)   
 [Maryclare Griffin](https://maryclare.github.io/)  
 [Yanjun He](https://www.stat.washington.edu/person/yanjun-he)     
