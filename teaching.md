@@ -9,9 +9,11 @@ permalink: /teaching/
 
 #### Courses 
 
-[STAT 832](http://www2.stat.duke.edu/~pdh10/Teaching/832/stat832.html) Multivariate Statistical Analysis
+[STA 832](http://www2.stat.duke.edu/~pdh10/Teaching/832/stat832.html) Multivariate Statistical Analysis
 
-[STAT 532](http://www2.stat.duke.edu/~pdh10/Teaching/532/stat532.html) Theory of Statistical Inference
+[STA 790](http://www2.stat.duke.edu/~pdh10/Teaching/790/sta790.html) Tensor methods in Statistic 
+
+[STA 532](http://www2.stat.duke.edu/~pdh10/Teaching/532/stat532.html) Theory of Statistical Inference
 
 [UW STAT 421](http://www.stat.washington.edu/~hoff/courses/421-502) Applied Statistics and Experimental Design 
 
