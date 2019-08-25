@@ -11,7 +11,7 @@ permalink: /teaching/
 
 [STA 832](http://www2.stat.duke.edu/~pdh10/Teaching/832/stat832.html) Multivariate Statistical Analysis
 
-[STA 790](http://www2.stat.duke.edu/~pdh10/Teaching/790/sta790.html) Tensor methods in Statistic 
+[STA 790](http://www2.stat.duke.edu/~pdh10/Teaching/790/sta790.html) Tensor methods in Statistics 
 
 [STA 532](http://www2.stat.duke.edu/~pdh10/Teaching/532/stat532.html) Theory of Statistical Inference
 
