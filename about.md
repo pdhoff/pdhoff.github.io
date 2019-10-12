@@ -18,7 +18,7 @@ B.S. in Mathematics (1993), Indiana University
 ### Current PhD mentees
 
 [Jordan Bryan](https://j-g-b.github.io/)     
-[Andy McCormack](https://stat.duke.edu/people/andrew-mccormack)
+[Andy McCormack](https://stat.duke.edu/people/andrew-mccormack)     
 [Anna Yanchenko](https://stat.duke.edu/people/anna-yanchenko-0)    
 
 
@@ -50,7 +50,7 @@ James Wu: [Matrix completion techniques for anomaly detection in network attacks
 ### Kudos
 
 Fellow, IMS     
-Fello, ASA     
+Fellow, ASA     
 Savage award winner, ISBA
 
 
