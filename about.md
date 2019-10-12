@@ -7,6 +7,8 @@ permalink: /about/
 
 
 
+
+
 ### Education
 Ph.D. in Statistics (2000), University of Wisconsin   
 M.S. in Statistics (1995), University of Wisconsin   
@@ -15,7 +17,7 @@ B.S. in Mathematics (1993), Indiana University
 
 ### Current PhD mentees
 
-[Jordan Bryan](https://j-g-b.github.io/)
+[Jordan Bryan](https://j-g-b.github.io/)     
 [Andy McCormack](https://stat.duke.edu/people/andrew-mccormack)
 [Anna Yanchenko](https://stat.duke.edu/people/anna-yanchenko-0)    
 
@@ -43,4 +45,12 @@ B.S. in Mathematics (1993), Indiana University
 Chris Suh: [Rduino - A microcontroller interface](https://cran.r-project.org/web/packages/Rduino)     
 Andy Cho: [ICEWSViews - International relations viewer ](https://saxon.stat.duke.edu:3838/pdh10/ICEWSViews/)   
 James Wu: [Matrix completion techniques for anomaly detection in network attacks](https://github.com/DukeStatSci/thesis-sp18-wu-anomalydet/blob/master/docs/thesis.pdf)
+
+
+### Kudos
+
+Fellow, IMS     
+Fello, ASA     
+Savage award winner, ISBA
+
 
