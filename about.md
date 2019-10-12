@@ -15,8 +15,9 @@ B.S. in Mathematics (1993), Indiana University
 
 ### Current PhD mentees
 
-[Anna Yanchenko](https://stat.duke.edu/people/anna-yanchenko-0)    
+[Jordan Bryan](https://j-g-b.github.io/)
 [Andy McCormack](https://stat.duke.edu/people/andrew-mccormack)
+[Anna Yanchenko](https://stat.duke.edu/people/anna-yanchenko-0)    
 
 
 
