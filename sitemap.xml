@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/~pdh10/about/</loc>
+  </url>
+  
+  <url>
+    <loc>/~pdh10/book/</loc>
+  </url>
+  
+  <url>
+    <loc>/~pdh10/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>/~pdh10/notes/</loc>
+  </url>
+  
+  <url>
+    <loc>/~pdh10/notes/2017-1-18-hpp/</loc>
+  </url>
+  
+  <url>
+    <loc>/~pdh10/</loc>
+  </url>
+  
+  <url>
+    <loc>/~pdh10/research/</loc>
+  </url>
+  
+  <url>
+    <loc>/~pdh10/tags/</loc>
+  </url>
+  
+  <url>
+    <loc>/~pdh10/teaching/</loc>
+  </url>
+  
+</urlset>

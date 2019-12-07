@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Penalized regression using only first-semester calculus</title> 
+  <link rel="stylesheet" href="/~pdh10/css/main.css">
+</head>
+<body>
+
+<a href="/~pdh10/" style="font-size: 25px">Peter Hoff</a> 
+<span style="display:inline-block; width: 75px;"></span>
+<a href="/~pdh10/about">About</a>   
+<span style="display:inline-block; width: 30px;"></span>
+<a href="/~pdh10/research">Research</a> 
+<span style="display:inline-block; width: 30px;"></span>
+<a href="/~pdh10/teaching">Teaching</a> 
+<span style="display:inline-block; width: 30px;"></span>
+<a href="/~pdh10/book">Book</a> 
+<span style="display:inline-block; width: 30px;"></span>
+<a href="/~pdh10/notes">Notes</a> 
+<br>
+
+<hr/>
+
+<br>
+
+
+
+<script src="//yihui.org/js/math-code.js"></script>
+<script async
+src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+  
+
+
+<div id="summary" class="section level3">
+<h3>Summary</h3>
+<p>Modern data analyses often involve
+too many regressors and not enough observations. In these situations,
+the OLS regression estimator is highly variable and can lead to
+poor predictions. A popular alternative estimator is the Lasso
+regression estimator. In this post I explain how the lasso regression
+estimator may be computed by iterating the following two
+lines of code:</p>
+<pre class="r"><code>u&lt;- solve( Q * v%*%t(v) + lambda*diag(p)/2 )%*%( l*v )
+
+v&lt;- solve( Q * u%*%t(u) + lambda*diag(p)/2 )%*%( l*u )  </code></pre>
+<p>Understanding why this iterative algorithm works requires
+only a basic understanding of linear regression and
+first-semester calculus.
+Specifically, the only fact from optimization you really need to
+know is that</p>
+<p><span class="math display">\[ \min_v    v^2+ \theta^2/v^2 =  2|\theta|.  \]</span></p>
+<p>The full article describing this
+idea and algorithm is available at
+<a href="https://arxiv.org/abs/1611.00040">arXiv:1611.00040</a>. Below
+is a synopsis and brief example.</p>
+</div>
+<div id="penalized-linear-regression" class="section level3">
+<h3>Penalized linear regression</h3>
+<div id="least-squares-estimation" class="section level4">
+<h4>Least squares estimation</h4>
+<p>If you are familiar with the linear regression model</p>
+<p><span class="math display">\[y_i = \beta^\top x_i + \epsilon_i\]</span></p>
+<p>you probably know that
+the OLS regression estimate <span class="math inline">\(\hat \beta_{\text{ols}}\)</span> is the minimizer
+of the residual sum of squares</p>
+<p><span class="math display">\[ \hat \beta_{\text{ols}}=\arg \min_\beta \sum (y_i - \beta^\top x_i  )^2. \]</span></p>
+<p>It is convenient to rewrite the residual sum of squares as</p>
+<span class="math display">\[\begin{align*} 
+\sum (y_i - \beta^\top x_i  )^2  &amp;= \sum y_i^2 - 2 \beta^\top \sum y_ix_i +
+    \beta^\top \left (\sum x_i x_i^\top \right ) \\
+  &amp;= ||y||^2 - 2 \beta^\top l + \beta^\top Q \beta. 
+\end{align*}\]</span>
+<p>Since the difference between the RSS at any two
+values of <span class="math inline">\(\beta\)</span> is not affected by the value of <span class="math inline">\(||y||^2\)</span>,
+we can write</p>
+<p><span class="math display">\[
+ \hat \beta_{\text{ols}} = \arg \min_\beta   \beta^\top Q \beta -  2 \beta^\top l .
+\]</span></p>
+<p>Using calculus or orthogonality considerations, you can show
+<span class="math inline">\(\hat \beta_{\text{ols}}\)</span> will satisfy
+<span class="math inline">\(2 Q \hat\beta_{\text{ols}} = 2 l\)</span>. If
+<span class="math inline">\(Q\)</span> is invertible, then</p>
+<span class="math display">\[\begin{align*}
+ \hat \beta_{\text{ols}} &amp; = \arg \min_\beta   \beta^\top Q \beta -  2 \beta^\top l . \\ 
+ &amp;= Q^{-1} l.
+\end{align*}\]</span>
+</div>
+<div id="ridge-regression" class="section level4">
+<h4>Ridge regression</h4>
+<p>As described above, the OLS estimate has fallen out
+of fashion, and people nowadays prefer <del>Bayesian</del>
+penalized estimates given by</p>
+<p><span class="math display">\[
+\hat \beta = \arg \min_\beta \beta^\top Q \beta -  2 \beta^\top l  + f(\beta)
+\]</span></p>
+<p>where <span class="math inline">\(f(\beta)\)</span> is some penalty function. One popular penalty function is
+an <span class="math inline">\(L_2\)</span> or &quot;ridge&quot; penalty,
+given by <span class="math inline">\(f(\beta) = \lambda\beta^\top \beta\)</span> for some <span class="math inline">\(\lambda&gt;0\)</span>.
+This penalty can also be written as
+<span class="math inline">\(f(\beta) = \lambda \sum |\beta_j|^2\)</span>.
+For this ridge penalty, the penalized
+regression estimate is</p>
+<span class="math display">\[\begin{align*}
+\hat \beta &amp; = \arg \min_\beta \beta^\top Q \beta -  2 \beta^\top l  +  \lambda \beta^\top \beta   \\ 
+   &amp;= \arg \min_\beta \beta^\top (Q + \lambda I) \beta -  2 \beta^\top l.  \\
+   &amp;= ( Q + \lambda I  )^{-1} l ,
+\end{align*}\]</span>
+<p>where the last line follows by using the same logic as used to
+obtain the OLS estimator, with <span class="math inline">\(Q\)</span> replaced by <span class="math inline">\(Q+\lambda I\)</span>.
+The resulting
+estimator is called a ridge regression estimator, and
+happens to be equal to the posterior mean estimator of
+<span class="math inline">\(\beta\)</span> under a <span class="math inline">\(N(0,1/\lambda)\)</span> prior distribution for
+the elements of <span class="math inline">\(\beta\)</span>.</p>
+</div>
+<div id="lasso-regression" class="section level4">
+<h4>Lasso regression</h4>
+<p>Another popular penalty on <span class="math inline">\(\beta\)</span> is the <span class="math inline">\(L_1\)</span> or lasso penalty,
+given by <span class="math inline">\(f(\beta) =\lambda \sum |\beta_j|\)</span>. A lasso estimate is
+given by</p>
+<p><span class="math display">\[
+\begin{align*}
+\hat \beta &amp; = \arg \min_\beta \beta^\top Q \beta -  2 \beta^\top l  +  \lambda \sum | \beta_j|.    
+\end{align*}
+\]</span></p>
+<p>Unfortunately there is no closed-form expression for the lasso
+estimator. To compute it, you need to do one of the following:</p>
+<ol style="list-style-type: decimal">
+<li>Learn convex optimization and then write an algorithm;</li>
+<li>Use a canned algorithm that you don't understand;</li>
+<li>Use a trick that only requires knowing first-semester undergrad calculus.</li>
+</ol>
+<p>The third option is explained below.</p>
+</div>
+</div>
+<div id="the-hadamard-product-parametrization-of-the-l_1-penalty" class="section level3">
+<h3>The Hadamard product parametrization of the <span class="math inline">\(L_1\)</span> penalty</h3>
+<div id="the-math" class="section level4">
+<h4>The math</h4>
+<p>The calculus
+you need to know to understand the trick is as follows:
+Let <span class="math inline">\(h(x) = x + a/x\)</span> for <span class="math inline">\(x&gt;0\)</span> and some fixed <span class="math inline">\(a&gt;0\)</span>.
+Here is a plot of this function for <span class="math inline">\(a=2\)</span>:</p>
+<p><img src="/~pdh10/notes/2017-1-18-hpp_files/figure-html/unnamed-chunk-2-1.png" width="480" /></p>
+<p>This looks convex. Let's take a derivative and see where
+it is zero:</p>
+<p><span class="math display">\[
+\begin{align*}
+h&#39;(x)  = 1  - a/x^2  &amp;  = 0  \\  
+         x^2 &amp;= a. 
+\end{align*}
+\]</span></p>
+<p>So the only critical point is <span class="math inline">\(x= \sqrt{a}\)</span>. The picture suggests that
+this is the function's minimum, but that's not enough for full credit on the
+calculus quiz. Let's take another derivative:</p>
+<p><span class="math display">\[
+h&#39;&#39;(x) = 2a/x^3.
+\]</span></p>
+<p>That's positive, so indeed <span class="math inline">\(x=\sqrt{a}\)</span> is the minimum of this function.
+So we have</p>
+<span class="math display">\[\begin{align*}
+  \arg \min_{x&gt;0}  x + a/x  &amp;= \sqrt{a} \\ 
+   \min_{x&gt;0}  x + a/x  &amp; = 2 \sqrt{a}. \\ 
+\end{align*}\]</span>
+</div>
+<div id="the-reparametrization" class="section level4">
+<h4>The reparametrization</h4>
+<p>Now suppose we have a single (scalar) <span class="math inline">\(\beta\)</span> and want to minimize
+some function <span class="math inline">\(\tilde f(\beta) = f(\beta) + \lambda |\beta|\)</span>.
+Here is one way to do it: Write <span class="math inline">\(\beta=uv\)</span> and
+find values of <span class="math inline">\(u\)</span> and <span class="math inline">\(v\)</span> that minimize the function</p>
+<p><span class="math display">\[ \tilde g(u,v) = f(uv) + \lambda u^2/2 + \lambda v^2/2.\]</span></p>
+<p>Let's see why this works:</p>
+<p><span class="math display">\[
+\begin{align*}
+\min_{u,v} f(uv) + \lambda u^2/2 + \lambda v^2/2   &amp;= 
+\min_{\beta,u} f(\beta) + \lambda u^2/2 + \lambda (\beta/u)^2/2  \\
+ &amp;= \min_\beta f(\beta)  +
+    \tfrac{\lambda}{2} \min_u \left [ u^2 + (\beta/u)^2 \right ]   \\
+ &amp;=  \min_\beta f(\beta) +
+     \tfrac{\lambda}{2} ( 2\sqrt{\beta^2} )  \\
+ &amp;=    \min_\beta f(\beta) + \lambda|\beta|.
+\end{align*}
+\]</span></p>
+<p>The first line follows by letting <span class="math inline">\(\beta= uv\)</span>. The third line
+follows from the calculus result above.</p>
+</div>
+<div id="the-generalization" class="section level4">
+<h4>The generalization</h4>
+<p>Now let <span class="math inline">\(\beta\)</span> be a vector, and reparametrize as
+<span class="math inline">\(\beta=u\circ v\)</span> where &quot;<span class="math inline">\(\circ\)</span>&quot; is the Hadamard (elementwise)
+product of the vectors <span class="math inline">\(u\)</span> and <span class="math inline">\(v\)</span>. Applying the same logic as above,
+it follows that</p>
+<p><span class="math display">\[ 
+\min_\beta f(\beta) + \lambda \sum |\beta_j|  =
+\min_{u,v}  f(uv) + \lambda u^\top u /2 + \lambda v^\top v/2
+\]</span></p>
+<p>This is the &quot;variational form&quot; of the <span class="math inline">\(L_1\)</span> norm.
+Why might this be helpful? The function to optimize on the left-hand side
+is convex (if <span class="math inline">\(f\)</span> is) but not differentiable.
+You need to take more math classes if you want to understand how to optimize
+this function directly.
+Alternatively, the
+function to optimize on the
+left hand side is differentiable, and can be optimized by iteratively minimizing
+in <span class="math inline">\(u\)</span> and <span class="math inline">\(v\)</span>.</p>
+</div>
+<div id="lasso-estimates-via-alternating-ridge-regressions" class="section level4">
+<h4>Lasso estimates via alternating ridge regressions</h4>
+<p>Let's return to the <span class="math inline">\(L_1\)</span> penalized linear regression problem:</p>
+<p><span class="math display">\[
+\hat \beta =  \arg \min_\beta  \beta^\top Q \beta - 2 \beta^\top l  + \lambda ||\beta||_1 
+\]</span></p>
+<p>As we discussed above, <span class="math inline">\(\hat \beta = \hat u\circ \hat v\)</span> where
+<span class="math display">\[
+(\hat u,\hat v) =  \arg \min_{u,v} \    (u\circ v)^\top Q (u\circ v) - 2 (u\circ v )^\top l  +  \tfrac{\lambda}{2}u^\top u + \tfrac{\lambda}{2}v^\top v .
+\]</span>
+The optimal <span class="math inline">\(u\)</span> for fixed <span class="math inline">\(v\)</span> is</p>
+<span class="math display">\[\begin{align*} 
+ \tilde u &amp; = \arg \min_u  
+(u\circ v)^\top Q (u\circ v)-2 (u\circ v)^\top l + \tfrac{\lambda}{2}u^\top u  \\
+&amp; = u^\top (Q \circ v v^\top + I  \lambda/2  ) u - 2 u^\top (v\circ l)   \\
+ &amp;= (Q \circ v v^\top + I  \lambda/2 )^{-1} (v\circ l). 
+\end{align*}\]</span>
+<p>The third line follows from the second by noting that the second line is
+equivalent to the ridge regression criterion where <span class="math inline">\(u\)</span> is the parameter.
+A similar result holds for the optimal value of <span class="math inline">\(v\)</span> given <span class="math inline">\(u\)</span>.
+An alternating ridge regression algorithm for finding the lasso
+estimate <span class="math inline">\(\hat \beta = \hat u\circ \hat v\)</span> is therefore to iterate
+the following until convergence.</p>
+<ol style="list-style-type: decimal">
+<li>Set <span class="math inline">\(u =(Q \circ v v^\top + I \lambda/2 )^{-1} (v\circ l)\)</span>.</li>
+<li>Set <span class="math inline">\(v =(Q \circ u u^\top + I \lambda/2 )^{-1} (u\circ l)\)</span>.</li>
+</ol>
+</div>
+</div>
+<div id="numerical-example" class="section level3">
+<h3>Numerical example</h3>
+<p>Let's try this out with a numerical example - an analysis of some data
+on diabetes progression. We’ll hold out the first 100
+observations to use as a test set, with which we will
+evaluate the predictive performance
+of the estimators we obtain.</p>
+<pre class="r"><code>load(url(&quot;http://www2.stat.duke.edu/~pdh10/Datasets/yX_diabetes&quot;))
+
+y&lt;-yX_diabetes[-(1:100),1]  ; ytest&lt;-yX_diabetes[1:100,1]
+X&lt;-yX_diabetes[-(1:100),-1] ; Xtest&lt;-yX_diabetes[1:100,-1] 
+
+dim(X) </code></pre>
+<pre><code>## [1] 342  64</code></pre>
+<pre class="r"><code>colnames(X) </code></pre>
+<pre><code>##  [1] &quot;age&quot;     &quot;sex&quot;     &quot;bmi&quot;     &quot;map&quot;     &quot;tc&quot;      &quot;ldl&quot;     &quot;hdl&quot;    
+##  [8] &quot;tch&quot;     &quot;ltg&quot;     &quot;glu&quot;     &quot;age^2&quot;   &quot;bmi^2&quot;   &quot;map^2&quot;   &quot;tc^2&quot;   
+## [15] &quot;ldl^2&quot;   &quot;hdl^2&quot;   &quot;tch^2&quot;   &quot;ltg^2&quot;   &quot;glu^2&quot;   &quot;age:sex&quot; &quot;age:bmi&quot;
+## [22] &quot;age:map&quot; &quot;age:tc&quot;  &quot;age:ldl&quot; &quot;age:hdl&quot; &quot;age:tch&quot; &quot;age:ltg&quot; &quot;age:glu&quot;
+## [29] &quot;sex:bmi&quot; &quot;sex:map&quot; &quot;sex:tc&quot;  &quot;sex:ldl&quot; &quot;sex:hdl&quot; &quot;sex:tch&quot; &quot;sex:ltg&quot;
+## [36] &quot;sex:glu&quot; &quot;bmi:map&quot; &quot;bmi:tc&quot;  &quot;bmi:ldl&quot; &quot;bmi:hdl&quot; &quot;bmi:tch&quot; &quot;bmi:ltg&quot;
+## [43] &quot;bmi:glu&quot; &quot;map:tc&quot;  &quot;map:ldl&quot; &quot;map:hdl&quot; &quot;map:tch&quot; &quot;map:ltg&quot; &quot;map:glu&quot;
+## [50] &quot;tc:ldl&quot;  &quot;tc:hdl&quot;  &quot;tc:tch&quot;  &quot;tc:ltg&quot;  &quot;tc:glu&quot;  &quot;ldl:hdl&quot; &quot;ldl:tch&quot;
+## [57] &quot;ldl:ltg&quot; &quot;ldl:glu&quot; &quot;hdl:tch&quot; &quot;hdl:ltg&quot; &quot;hdl:glu&quot; &quot;tch:ltg&quot; &quot;tch:glu&quot;
+## [64] &quot;ltg:glu&quot;</code></pre>
+<p>First, the OLS estimates:</p>
+<p><img src="/~pdh10/notes/2017-1-18-hpp_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<pre class="r"><code>mean( (ytest - Xtest%*%beta_ols)^2 ) </code></pre>
+<pre><code>## [1] 0.5966967</code></pre>
+<p>A lot of the estimated coefficients are close to zero,
+but of course not quite zero. We could just infer that
+these estimated effects are &quot;small&quot;, but that doesn't
+sound very sophisticated. Instead, let's
+use the Hadamard product parametrization to
+obtain sparse lasso estimates. Here is the code to set up
+the algorithm:</p>
+<pre class="r"><code>Q&lt;-crossprod(X)
+l&lt;-crossprod(X,y) 
+
+Il&lt;-diag(ncol(X))*lambda
+v&lt;-sqrt(abs(fit_ols$coef))</code></pre>
+<p>The object <code>Il</code> is just a diagonal matrix
+times the penalty parameter <span class="math inline">\(\lambda\)</span>. What is
+the value of <span class="math inline">\(\lambda\)</span> and where did it come from?
+The value is 14.26, and this is
+a moment-based empirical Bayes estimate.
+Here is the optimization algorithm:</p>
+<pre class="r"><code>for(s in 1:100)
+{ 
+  u&lt;- solve( Q * v%*%t(v) + Il/2 )%*%( l*v )
+
+  v&lt;- solve( Q * u%*%t(u) + Il/2 )%*%( l*u )  
+}
+
+beta_l1p&lt;-u*v</code></pre>
+<p>(This code can be sped-up by using Cholesky factorizations - see the
+code on my website for details).</p>
+<p>Here are the resulting lasso estimates. As can be seen, many of the
+estimated coefficients are zero.
+<img src="/~pdh10/notes/2017-1-18-hpp_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<p>The resulting sparse estimate provide slightly improved
+predictive performance, as compared to the OLS estimate:</p>
+<pre class="r"><code>mean( (ytest - Xtest%*%beta_l1p)^2 )        </code></pre>
+<pre><code>## [1] 0.5337473</code></pre>
+<p>Still, there are a lot of coefficient estimates that are small, but not
+quite zero. Can't we zap these away too?</p>
+<p>We’ve seen how writing <span class="math inline">\(\beta = u\circ v\)</span> leads to
+penalized (lasso) estimates of <span class="math inline">\(\beta\)</span>. Maybe to
+get more penalization we could write <span class="math inline">\(\beta\)</span> as a product of
+more things:</p>
+<pre class="r"><code>v&lt;-w&lt;-x&lt;-(abs(beta_ols))^(.25)   
+
+for(s in 1:100)
+{
+  u&lt;- solve( Q * (v*w*x)%*%t(v*w*x) + Il/4 )%*%( l*v*w*x )
+
+  v&lt;- solve( Q * (u*w*x)%*%t(u*w*x) + Il/4 )%*%( l*u*w*x )
+
+  w&lt;- solve( Q * (u*v*x)%*%t(u*v*x) + Il/4 )%*%( l*u*v*x )
+
+  x&lt;- solve( Q * (u*v*w)%*%t(u*v*w) + Il/4 )%*%( l*u*v*w )
+}
+
+beta_lhp&lt;-u*v*w*x</code></pre>
+<p><img src="/~pdh10/notes/2017-1-18-hpp_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p>Indeed, this has led to a &quot;stronger&quot; penalty in the sense that
+now we have mostly coefficients that are zero, and
+a few coefficients
+that are reasonably far from zero. This is very aesthetically pleasing,
+and even better, leads to improved predictive performance:</p>
+<pre class="r"><code>mean( (ytest - Xtest%*%beta_lhp)^2 )</code></pre>
+<pre><code>## [1] 0.5187066</code></pre>
+<p>What is this crazy estimate, that was obtained by writing
+<span class="math inline">\(\beta\)</span> as the Hadamard product of four quantities?
+With a similar calculus trick that was used above,
+you can show that the resulting estimate
+<code>beta_lhp</code> is a local minimizer of the <span class="math inline">\(L_{1/2}\)</span>-penalized
+residual sum of squares:</p>
+<p><span class="math display">\[
+  \hat \beta_{1/2} = 
+  \arg \min ||y-X\beta||^2  + \lambda ||\beta||_{1/2}.
+\]</span></p>
+<p>This penalty is non-convex, and allows for more shrinkage
+of the small coefficients without biasing the larger coefficients
+as much. I also should have noted above that the empirical
+Bayes estimate of <span class="math inline">\(\lambda\)</span> that yielded these <span class="math inline">\(L_{1/2}\)</span>-penalized
+estimates was 10.17, which is different than
+the value used for the lasso estimates.</p>
+<p>More on the correspondence
+between <span class="math inline">\(L_q\)</span> penalties and the Hadamard product parametrization
+can be found in my article
+<a href="https://arxiv.org/abs/1611.00040">arXiv:1611.00040</a>. The article
+also includes</p>
+<ul>
+<li>a comparison to other optimization methods;</li>
+<li>an algorithm for penalized logistic regression;</li>
+<li>a new penalty for spatially structured sparsity.</li>
+</ul>
+</div>
+
+
+
+
+
+
+</body>
+
+</html>
+
+
+
+
+
