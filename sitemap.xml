@@ -3,39 +3,39 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://pdhoff.github.io/about/</loc>
+    <loc>/about/</loc>
   </url>
   
   <url>
-    <loc>https://pdhoff.github.io/book/</loc>
+    <loc>/book/</loc>
   </url>
   
   <url>
-    <loc>https://pdhoff.github.io/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>https://pdhoff.github.io/notes/</loc>
+    <loc>/notes/</loc>
   </url>
   
   <url>
-    <loc>https://pdhoff.github.io/notes/2017-1-18-hpp/</loc>
+    <loc>/notes/2017-1-18-hpp/</loc>
   </url>
   
   <url>
-    <loc>https://pdhoff.github.io/</loc>
+    <loc>/</loc>
   </url>
   
   <url>
-    <loc>https://pdhoff.github.io/research/</loc>
+    <loc>/research/</loc>
   </url>
   
   <url>
-    <loc>https://pdhoff.github.io/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
   <url>
-    <loc>https://pdhoff.github.io/teaching/</loc>
+    <loc>/teaching/</loc>
   </url>
   
 </urlset>
