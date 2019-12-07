@@ -145,7 +145,7 @@ estimator. To compute it, you need to do one of the following:</p>
 you need to know to understand the trick is as follows:
 Let <span class="math inline">\(h(x) = x + a/x\)</span> for <span class="math inline">\(x&gt;0\)</span> and some fixed <span class="math inline">\(a&gt;0\)</span>.
 Here is a plot of this function for <span class="math inline">\(a=2\)</span>:</p>
-<p><img src="/~pdh10/notes/2017-1-18-hpp_files/figure-html/unnamed-chunk-2-1.png" width="480" /></p>
+<p><img src="/notes/2017-1-18-hpp_files/figure-html/unnamed-chunk-2-1.png" width="480" /></p>
 <p>This looks convex. Let's take a derivative and see where
 it is zero:</p>
 <p><span class="math display">\[
@@ -264,7 +264,7 @@ dim(X) </code></pre>
 ## [57] &quot;ldl:ltg&quot; &quot;ldl:glu&quot; &quot;hdl:tch&quot; &quot;hdl:ltg&quot; &quot;hdl:glu&quot; &quot;tch:ltg&quot; &quot;tch:glu&quot;
 ## [64] &quot;ltg:glu&quot;</code></pre>
 <p>First, the OLS estimates:</p>
-<p><img src="/~pdh10/notes/2017-1-18-hpp_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
+<p><img src="/notes/2017-1-18-hpp_files/figure-html/unnamed-chunk-4-1.png" width="672" /></p>
 <pre class="r"><code>mean( (ytest - Xtest%*%beta_ols)^2 ) </code></pre>
 <pre><code>## [1] 0.5966967</code></pre>
 <p>A lot of the estimated coefficients are close to zero,
@@ -297,7 +297,7 @@ beta_l1p&lt;-u*v</code></pre>
 code on my website for details).</p>
 <p>Here are the resulting lasso estimates. As can be seen, many of the
 estimated coefficients are zero.
-<img src="/~pdh10/notes/2017-1-18-hpp_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
+<img src="/notes/2017-1-18-hpp_files/figure-html/unnamed-chunk-9-1.png" width="672" /></p>
 <p>The resulting sparse estimate provide slightly improved
 predictive performance, as compared to the OLS estimate:</p>
 <pre class="r"><code>mean( (ytest - Xtest%*%beta_l1p)^2 )        </code></pre>
@@ -322,7 +322,7 @@ for(s in 1:100)
 }
 
 beta_lhp&lt;-u*v*w*x</code></pre>
-<p><img src="/~pdh10/notes/2017-1-18-hpp_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
+<p><img src="/notes/2017-1-18-hpp_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 <p>Indeed, this has led to a &quot;stronger&quot; penalty in the sense that
 now we have mostly coefficients that are zero, and
 a few coefficients
