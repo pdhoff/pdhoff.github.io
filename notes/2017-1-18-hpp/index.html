@@ -32,8 +32,7 @@ src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
 
 
 
-  <script src="/rmarkdown-libs/jquery/jquery.min.js"></script>
-<script src="/rmarkdown-libs/elevate-section-attrs/elevate-section-attrs.js"></script>
+  
 
 
 <div id="summary" class="section level3">
@@ -70,11 +69,11 @@ the OLS regression estimate <span class="math inline">\(\hat \beta_{\text{ols}}\
 of the residual sum of squares</p>
 <p><span class="math display">\[ \hat \beta_{\text{ols}}=\arg \min_\beta \sum (y_i - \beta^\top x_i  )^2. \]</span></p>
 <p>It is convenient to rewrite the residual sum of squares as</p>
-<p><span class="math display">\[\begin{align*} 
+<span class="math display">\[\begin{align*} 
 \sum (y_i - \beta^\top x_i  )^2  &amp;= \sum y_i^2 - 2 \beta^\top \sum y_ix_i +
     \beta^\top \left (\sum x_i x_i^\top \right ) \\
   &amp;= ||y||^2 - 2 \beta^\top l + \beta^\top Q \beta. 
-\end{align*}\]</span></p>
+\end{align*}\]</span>
 <p>Since the difference between the RSS at any two
 values of <span class="math inline">\(\beta\)</span> is not affected by the value of <span class="math inline">\(||y||^2\)</span>,
 we can write</p>
@@ -85,10 +84,10 @@ we can write</p>
 <span class="math inline">\(\hat \beta_{\text{ols}}\)</span> will satisfy
 <span class="math inline">\(2 Q \hat\beta_{\text{ols}} = 2 l\)</span>. If
 <span class="math inline">\(Q\)</span> is invertible, then</p>
-<p><span class="math display">\[\begin{align*}
+<span class="math display">\[\begin{align*}
  \hat \beta_{\text{ols}} &amp; = \arg \min_\beta   \beta^\top Q \beta -  2 \beta^\top l . \\ 
  &amp;= Q^{-1} l.
-\end{align*}\]</span></p>
+\end{align*}\]</span>
 </div>
 <div id="ridge-regression" class="section level4">
 <h4>Ridge regression</h4>
@@ -99,17 +98,17 @@ penalized estimates given by</p>
 \hat \beta = \arg \min_\beta \beta^\top Q \beta -  2 \beta^\top l  + f(\beta)
 \]</span></p>
 <p>where <span class="math inline">\(f(\beta)\)</span> is some penalty function. One popular penalty function is
-an <span class="math inline">\(L_2\)</span> or "ridge" penalty,
+an <span class="math inline">\(L_2\)</span> or &quot;ridge&quot; penalty,
 given by <span class="math inline">\(f(\beta) = \lambda\beta^\top \beta\)</span> for some <span class="math inline">\(\lambda&gt;0\)</span>.
 This penalty can also be written as
 <span class="math inline">\(f(\beta) = \lambda \sum |\beta_j|^2\)</span>.
 For this ridge penalty, the penalized
 regression estimate is</p>
-<p><span class="math display">\[\begin{align*}
+<span class="math display">\[\begin{align*}
 \hat \beta &amp; = \arg \min_\beta \beta^\top Q \beta -  2 \beta^\top l  +  \lambda \beta^\top \beta   \\ 
    &amp;= \arg \min_\beta \beta^\top (Q + \lambda I) \beta -  2 \beta^\top l.  \\
    &amp;= ( Q + \lambda I  )^{-1} l ,
-\end{align*}\]</span></p>
+\end{align*}\]</span>
 <p>where the last line follows by using the same logic as used to
 obtain the OLS estimator, with <span class="math inline">\(Q\)</span> replaced by <span class="math inline">\(Q+\lambda I\)</span>.
 The resulting
@@ -163,10 +162,10 @@ h&#39;&#39;(x) = 2a/x^3.
 \]</span></p>
 <p>That's positive, so indeed <span class="math inline">\(x=\sqrt{a}\)</span> is the minimum of this function.
 So we have</p>
-<p><span class="math display">\[\begin{align*}
+<span class="math display">\[\begin{align*}
   \arg \min_{x&gt;0}  x + a/x  &amp;= \sqrt{a} \\ 
    \min_{x&gt;0}  x + a/x  &amp; = 2 \sqrt{a}. \\ 
-\end{align*}\]</span></p>
+\end{align*}\]</span>
 </div>
 <div id="the-reparametrization" class="section level4">
 <h4>The reparametrization</h4>
@@ -193,14 +192,14 @@ follows from the calculus result above.</p>
 <div id="the-generalization" class="section level4">
 <h4>The generalization</h4>
 <p>Now let <span class="math inline">\(\beta\)</span> be a vector, and reparametrize as
-<span class="math inline">\(\beta=u\circ v\)</span> where "<span class="math inline">\(\circ\)</span>" is the Hadamard (elementwise)
+<span class="math inline">\(\beta=u\circ v\)</span> where &quot;<span class="math inline">\(\circ\)</span>&quot; is the Hadamard (elementwise)
 product of the vectors <span class="math inline">\(u\)</span> and <span class="math inline">\(v\)</span>. Applying the same logic as above,
 it follows that</p>
 <p><span class="math display">\[ 
 \min_\beta f(\beta) + \lambda \sum |\beta_j|  =
 \min_{u,v}  f(uv) + \lambda u^\top u /2 + \lambda v^\top v/2
 \]</span></p>
-<p>This is the "variational form" of the <span class="math inline">\(L_1\)</span> norm.
+<p>This is the &quot;variational form&quot; of the <span class="math inline">\(L_1\)</span> norm.
 Why might this be helpful? The function to optimize on the left-hand side
 is convex (if <span class="math inline">\(f\)</span> is) but not differentiable.
 You need to take more math classes if you want to understand how to optimize
@@ -221,12 +220,12 @@ in <span class="math inline">\(u\)</span> and <span class="math inline">\(v\)</s
 (\hat u,\hat v) =  \arg \min_{u,v} \    (u\circ v)^\top Q (u\circ v) - 2 (u\circ v )^\top l  +  \tfrac{\lambda}{2}u^\top u + \tfrac{\lambda}{2}v^\top v .
 \]</span>
 The optimal <span class="math inline">\(u\)</span> for fixed <span class="math inline">\(v\)</span> is</p>
-<p><span class="math display">\[\begin{align*} 
+<span class="math display">\[\begin{align*} 
  \tilde u &amp; = \arg \min_u  
 (u\circ v)^\top Q (u\circ v)-2 (u\circ v)^\top l + \tfrac{\lambda}{2}u^\top u  \\
 &amp; = u^\top (Q \circ v v^\top + I  \lambda/2  ) u - 2 u^\top (v\circ l)   \\
  &amp;= (Q \circ v v^\top + I  \lambda/2 )^{-1} (v\circ l). 
-\end{align*}\]</span></p>
+\end{align*}\]</span>
 <p>The third line follows from the second by noting that the second line is
 equivalent to the ridge regression criterion where <span class="math inline">\(u\)</span> is the parameter.
 A similar result holds for the optimal value of <span class="math inline">\(v\)</span> given <span class="math inline">\(u\)</span>.
@@ -270,7 +269,7 @@ dim(X) </code></pre>
 <pre><code>## [1] 0.5966967</code></pre>
 <p>A lot of the estimated coefficients are close to zero,
 but of course not quite zero. We could just infer that
-these estimated effects are "small", but that doesn't
+these estimated effects are &quot;small&quot;, but that doesn't
 sound very sophisticated. Instead, let's
 use the Hadamard product parametrization to
 obtain sparse lasso estimates. Here is the code to set up
@@ -324,7 +323,7 @@ for(s in 1:100)
 
 beta_lhp&lt;-u*v*w*x</code></pre>
 <p><img src="/notes/2017-1-18-hpp_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
-<p>Indeed, this has led to a "stronger" penalty in the sense that
+<p>Indeed, this has led to a &quot;stronger&quot; penalty in the sense that
 now we have mostly coefficients that are zero, and
 a few coefficients
 that are reasonably far from zero. This is very aesthetically pleasing,
