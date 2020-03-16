@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Peter Hoff</title>
-    <link>https://pdhoff.github.io/categories/</link>
+    <link>http://www2.stat.duke.edu/~pdh10/categories/</link>
     <description>Recent content in Categories on Peter Hoff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://pdhoff.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://www2.stat.duke.edu/~pdh10/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
