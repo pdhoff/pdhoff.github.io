@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Peter Hoff</title>
@@ -66,7 +66,7 @@ u&amp;lt;- solve( Q * v%*%t(v) + lambda*diag(p)/2 )%*%( l*v ) v&amp;lt;- solve( 
       
       <guid>https://pdhoff.github.io/research/</guid>
       <description>Most of my articles since 2006 are available on arXiv.
- X.&amp;nbsp;Niu and P.D. Hoff. Joint mean and covariance modeling of multiple health outcome measures. Ann. Appl. Stat., 13(1):321&amp;ndash;339, 2019. [&amp;nbsp;bib&amp;nbsp;| DOI&amp;nbsp;| arXiv&amp;nbsp;| http&amp;nbsp;]  S.&amp;nbsp;Minhas, P.D. Hoff, and M.D. Ward. Inferential Approaches for Network Analyses: AMEN for Latent Factor Models. Political Analysis, 27:208&amp;ndash;222, 2019. [&amp;nbsp;bib&amp;nbsp;| DOI&amp;nbsp;| arXiv&amp;nbsp;]  M.&amp;nbsp;Griffin and P.D. Hoff. Lasso ANOVA decompositions for matrix and tensor data.</description>
+ M.&amp;nbsp;Drton, S.&amp;nbsp;Kuriki, and P.&amp;nbsp;Hoff. Existence and uniqueness of the Kronecker covariance MLE. 2020. [&amp;nbsp;bib&amp;nbsp;| arXiv&amp;nbsp;]  X.&amp;nbsp;Niu and P.D. Hoff. Joint mean and covariance modeling of multiple health outcome measures. Ann. Appl. Stat., 13(1):321&amp;ndash;339, 2019. [&amp;nbsp;bib&amp;nbsp;| DOI&amp;nbsp;| arXiv&amp;nbsp;| http&amp;nbsp;]  S.&amp;nbsp;Minhas, P.D. Hoff, and M.D. Ward. Inferential Approaches for Network Analyses: AMEN for Latent Factor Models. Political Analysis, 27:208&amp;ndash;222, 2019.</description>
     </item>
     
     <item>
