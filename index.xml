@@ -56,6 +56,7 @@ Undergraduate research supervisees Chris Suh: Rduino - A microcontroller interfa
       <guid>/teaching/</guid>
       <description>Courses STA 832 Multivariate Statistical Analysis
 STA 790 Tensor methods in Statistics
+STA 701 Readings in Statistical Science
 STA 532 Theory of Statistical Inference
 UW STAT 421 Applied Statistics and Experimental Design
 UW STAT 423 Applied Regression and Analysis of Variance
@@ -63,8 +64,7 @@ UW STAT 502 Design and Analysis of Experiments
 UW STAT/MATH 523 Advanced Probability III
 UW STAT 542 Multivariate Analysis
 UW CSSS/STAT 560 Hierarchical Modeling
-UW CSSS/STAT 564 Bayesian Statistics
-UW CSSS/STAT 567 Statistical Analysis of Social Networks</description>
+UW CSSS/STAT 564 Bayesian Statistics</description>
     </item>
     
   </channel>
