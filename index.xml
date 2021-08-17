@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Peter Hoff</title>
-    <link>https://pdhoff.github.io/</link>
+    <link>/</link>
     <description>Recent content on Peter Hoff</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://pdhoff.github.io/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About</title>
-      <link>https://pdhoff.github.io/about/</link>
+      <link>/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pdhoff.github.io/about/</guid>
+      <guid>/about/</guid>
       <description>Education Ph.D. in Statistics (2000), University of Wisconsin
 M.S. in Statistics (1995), University of Wisconsin
 B.S. in Mathematics (1993), Indiana University
@@ -29,19 +29,19 @@ Undergraduate research supervisees Chris Suh: Rduino - A microcontroller interfa
     
     <item>
       <title>Book</title>
-      <link>https://pdhoff.github.io/book/</link>
+      <link>/book/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pdhoff.github.io/book/</guid>
+      <guid>/book/</guid>
       <description>A First Course in Bayesian Statistical Methods  Ordering information  Springer website Amazon  Reviews JASA JRSS-A Econometrics Journal International Statistical Review  Data and code Data and code to replicate figures and numerical results Data and code for inline examples Data for exercises  Errata  </description>
     </item>
     
     <item>
       <title>Research</title>
-      <link>https://pdhoff.github.io/research/</link>
+      <link>/research/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pdhoff.github.io/research/</guid>
+      <guid>/research/</guid>
       <description>Most of my articles since 2006 are available on arXiv.
  P.D. Hoff. Bayes-optimal prediction with frequentist coverage control. 2021. [ bib | arXiv | code ]
  A. McCormack and P.D. Hoff. Equivariant estimation of Fréchet means. 2021. [ bib | arXiv ]
@@ -51,12 +51,13 @@ Undergraduate research supervisees Chris Suh: Rduino - A microcontroller interfa
     
     <item>
       <title>Teaching</title>
-      <link>https://pdhoff.github.io/teaching/</link>
+      <link>/teaching/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pdhoff.github.io/teaching/</guid>
+      <guid>/teaching/</guid>
       <description>Courses STA 832 Multivariate Statistical Analysis
-STA 790 Tensor methods in Statistics
+STA 790 Tensor Methods in Statistics
+STA 721 Linear Models
 STA 701 Readings in Statistical Science
 STA 532 Theory of Statistical Inference
 UW STAT 421 Applied Statistics and Experimental Design
