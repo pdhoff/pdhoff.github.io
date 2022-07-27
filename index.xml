@@ -5,11 +5,7 @@
     <link>https://pdhoff.github.io/</link>
     <description>Recent content on Peter Hoff</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://pdhoff.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://pdhoff.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://pdhoff.github.io/about/</link>
@@ -33,7 +29,7 @@ Undergraduate research supervisees Chris Suh: Rduino - A microcontroller interfa
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pdhoff.github.io/book/</guid>
-      <description>A First Course in Bayesian Statistical Methods  Ordering information  Springer website Amazon  Reviews JASA JRSS-A Econometrics Journal International Statistical Review  Data and code Data and code to replicate figures and numerical results Data and code for inline examples Data for exercises  Errata  </description>
+      <description>A First Course in Bayesian Statistical Methods  Ordering information  Springer website Amazon Japanese edition  Reviews JASA JRSS-A Econometrics Journal International Statistical Review  Data and code Data and code to replicate figures and numerical results Data and code for inline examples Data for exercises  Errata  </description>
     </item>
     
     <item>
@@ -43,10 +39,9 @@ Undergraduate research supervisees Chris Suh: Rduino - A microcontroller interfa
       
       <guid>https://pdhoff.github.io/research/</guid>
       <description>Most of my articles since 2006 are available on arXiv.
- P.D. Hoff. Bayes-optimal prediction with frequentist coverage control. 2021. [ bib | arXiv | code ]
- A. McCormack and P.D. Hoff. Equivariant estimation of Fréchet means. 2021. [ bib | arXiv ]
- J. Mulder and P.D. Hoff. A latent variable model for relational events with multiple receivers. 2021. [ bib | arXiv ]
- P. Hoff. Additive and multiplicative effects network models.</description>
+ P.D. Hoff, A. Mcormack, and A.R. Zhang. Core shrinkage covariance estimation for matrix-variate data. 2022. [ bib | arXiv | code ]
+ M.F. Christensen and P.D. Hoff. A nonstationary spatial covariance model for data on graphs. 2022. [ bib | arXiv ]
+ E. Bersson and P.D. Hoff. Optimal conformal prediction for small areas. 2022. [ bib | arXiv ]</description>
     </item>
     
     <item>
