@@ -20,7 +20,7 @@ Alumni Kyle Burris Michael Jauch Chaoyu Yu
 Maryclare Griffin
 Yanjun He Alex Franks David Gerard James Harmon Alex Volfovsky Bailey Fosdick Xiaoyue Niu Assaf Oron
 Anton Westveld
-Undergraduate research supervisees Chris Suh: Rduino - A microcontroller interface Andy Cho: ICEWSViews - International relations viewer</description>
+Undergraduate research supervisees Chris Suh: Rduino - A microcontroller interface Andy Cho: ICEWSViews - International relations viewer James Wu: Matrix completion techniques for anomaly detection in network attacks</description>
     </item>
     
     <item>
@@ -29,7 +29,7 @@ Undergraduate research supervisees Chris Suh: Rduino - A microcontroller interfa
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pdhoff.github.io/book/</guid>
-      <description>A First Course in Bayesian Statistical Methods  Ordering information  Springer website Amazon Japanese edition  Reviews JASA JRSS-A Econometrics Journal International Statistical Review  Data and code Data and code to replicate figures and numerical results Data and code for inline examples Data for exercises  Errata  </description>
+      <description>A First Course in Bayesian Statistical Methods Ordering information Springer website Amazon Japanese edition Reviews JASA JRSS-A Econometrics Journal International Statistical Review Data and code Data and code to replicate figures and numerical results Data and code for inline examples Data for exercises Errata </description>
     </item>
     
     <item>
@@ -39,9 +39,10 @@ Undergraduate research supervisees Chris Suh: Rduino - A microcontroller interfa
       
       <guid>https://pdhoff.github.io/research/</guid>
       <description>Most of my articles since 2006 are available on arXiv.
- P.D. Hoff, A. Mcormack, and A.R. Zhang. Core shrinkage covariance estimation for matrix-variate data. 2022. [ bib | arXiv | code ]
- M.F. Christensen and P.D. Hoff. A nonstationary spatial covariance model for data on graphs. 2022. [ bib | arXiv ]
- E. Bersson and P.D. Hoff. Optimal conformal prediction for small areas. 2022. [ bib | arXiv ]</description>
+P.D. Hoff, A. McCormack, and A.R. Zhang. Core shrinkage covariance estimation for matrix-variate data. 2022. [ bib | arXiv | code ]
+M.F. Christensen and P.D. Hoff. A nonstationary spatial covariance model for data on graphs. 2022. [ bib | arXiv ]
+E. Bersson and P.D. Hoff. Optimal conformal prediction for small areas. 2022. [ bib | arXiv ]
+A. McCormack and P.</description>
     </item>
     
     <item>
