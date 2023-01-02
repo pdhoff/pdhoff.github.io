@@ -40,9 +40,9 @@ Undergraduate research supervisees Chris Suh: Rduino - A microcontroller interfa
       
       <guid>https://pdhoff.github.io/research/</guid>
       <description>Most of my articles since 2006 are available on arXiv.
+ J.G. Bryan and P.D. Hoff. Smaller p-values in genomics studies using distilled auxiliary information. Biostatistics, 24(1):193–208, 2023. [ bib | DOI | arXiv | http ]
  J.G. Bryan, P.D. Hoff, and C.L. Osburn. Routine estimation of dissolved organic matter sources using fluorescence data and linear least squares. 2022. [ bib | code ]
- P.D. Hoff, A. McCormack, and A.R. Zhang. Core shrinkage covariance estimation for matrix-variate data. 2022. [ bib | arXiv | code ]
- M.F. Christensen and P.D. Hoff. A nonstationary spatial covariance model for data on graphs.</description>
+ P.D. Hoff, A. McCormack, and A.</description>
     </item>
     
     <item>
@@ -56,13 +56,12 @@ STA 790 Tensor Methods in Statistics
 STA 721 Linear Models
 STA 701 Readings in Statistical Science
 STA 532 Theory of Statistical Inference
+STA 360 Bayesian and Modern Statistics
 UW STAT 421 Applied Statistics and Experimental Design
 UW STAT 423 Applied Regression and Analysis of Variance
 UW STAT 502 Design and Analysis of Experiments
 UW STAT/MATH 523 Advanced Probability III
-UW STAT 542 Multivariate Analysis
-UW CSSS/STAT 560 Hierarchical Modeling
-UW CSSS/STAT 564 Bayesian Statistics</description>
+UW STAT 542 Multivariate Analysis</description>
     </item>
     
   </channel>
