@@ -5,35 +5,63 @@
     <link>https://pdhoff.github.io/</link>
     <description>Recent content on Peter Hoff</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <atom:link href="https://pdhoff.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://pdhoff.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>About</title>
       <link>https://pdhoff.github.io/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://pdhoff.github.io/about/</guid>
-      <description>Education Ph.D. in Statistics (2000), University of Wisconsin&#xA;M.S. in Statistics (1995), University of Wisconsin&#xA;B.S. in Mathematics (1993), Indiana University&#xA;Current PhD mentees Betsy Bersson Michael Christensen&#xA;Alumni Jordan Bryan Andy McCormack Kyle Burris Michael Jauch Chaoyu Yu&#xA;Maryclare Griffin&#xA;Yanjun He Alex Franks David Gerard James Harmon Alex Volfovsky Bailey Fosdick Xiaoyue Niu Assaf Oron&#xA;Anton Westveld&#xA;Undergraduate research supervisees Chris Suh: Rduino - A microcontroller interface Andy Cho: ICEWSViews - International relations viewer James Wu: Matrix completion techniques for anomaly detection in network attacks</description>
+      <description>Education Ph.D. in Statistics (2000), University of Wisconsin
+M.S. in Statistics (1995), University of Wisconsin
+B.S. in Mathematics (1993), Indiana University
+Current PhD mentees Betsy Bersson Michael Christensen
+Alumni Jordan Bryan Andy McCormack Kyle Burris Michael Jauch Chaoyu Yu
+Maryclare Griffin
+Yanjun He Alex Franks David Gerard James Harmon Alex Volfovsky Bailey Fosdick Xiaoyue Niu Assaf Oron
+Anton Westveld
+Undergraduate research supervisees Chris Suh: Rduino - A microcontroller interface Andy Cho: ICEWSViews - International relations viewer</description>
     </item>
+    
     <item>
       <title>Book</title>
       <link>https://pdhoff.github.io/book/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://pdhoff.github.io/book/</guid>
-      <description>A First Course in Bayesian Statistical Methods Ordering information Springer website Amazon Japanese edition Reviews JASA JRSS-A Econometrics Journal International Statistical Review Data and code Data and code to replicate figures and numerical results Data and code for inline examples Data for exercises Errata </description>
+      <description>A First Course in Bayesian Statistical Methods  Ordering information  Springer website Amazon Japanese edition  Reviews JASA JRSS-A Econometrics Journal International Statistical Review  Data and code Data and code to replicate figures and numerical results Data and code for inline examples Data for exercises  Errata  </description>
     </item>
+    
     <item>
       <title>Research</title>
       <link>https://pdhoff.github.io/research/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://pdhoff.github.io/research/</guid>
-      <description>Most of my articles since 2006 are available on arXiv.&#xA;P. Hoff. Bayes-optimal prediction with frequentist coverage control. Bernoulli, 29(2):901–928, 2023. [ bib | DOI | arXiv | code ]&#xA;J.G. Bryan and P.D. Hoff. Smaller p-values in genomics studies using distilled auxiliary information. Biostatistics, 24(1):193–208, 2023. [ bib | DOI | arXiv | http ]&#xA;Andrew McCormack and Peter D. Hoff. Tests of linear hypotheses using indirect information. Canad. J.</description>
+      <description>Most of my articles since 2006 are available on arXiv.
+ P. Hoff. Bayes-optimal prediction with frequentist coverage control. Bernoulli, 29(2):901–928, 2023. [ bib | DOI | arXiv | code ]
+ J.G. Bryan and P.D. Hoff. Smaller p-values in genomics studies using distilled auxiliary information. Biostatistics, 24(1):193–208, 2023. [ bib | DOI | arXiv | http ]
+ Andrew McCormack and Peter D. Hoff. Tests of linear hypotheses using indirect information.</description>
     </item>
+    
     <item>
       <title>Teaching</title>
       <link>https://pdhoff.github.io/teaching/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
       <guid>https://pdhoff.github.io/teaching/</guid>
-      <description>Courses STA 832 Multivariate Statistical Analysis&#xA;STA 790 Tensor Methods in Statistics&#xA;STA 721 Linear Models&#xA;STA 701 Readings in Statistical Science&#xA;STA 532 Theory of Statistical Inference&#xA;STA 360 Bayesian and Modern Statistics&#xA;UW STAT 421 Applied Statistics and Experimental Design&#xA;UW STAT 423 Applied Regression and Analysis of Variance&#xA;UW STAT 502 Design and Analysis of Experiments&#xA;UW STAT/MATH 523 Advanced Probability III&#xA;UW STAT 542 Multivariate Analysis</description>
+      <description>Courses STA 832 Multivariate Statistical Analysis
+STA 790 Tensor Methods in Statistics
+STA 721 Linear Models
+STA 701 Readings in Statistical Science
+STA 532 Theory of Statistical Inference
+STA 360 Bayesian and Modern Statistics
+UW STAT 421 Applied Statistics and Experimental Design
+UW STAT 423 Applied Regression and Analysis of Variance
+UW STAT 502 Design and Analysis of Experiments
+UW STAT/MATH 523 Advanced Probability III
+UW STAT 542 Multivariate Analysis</description>
     </item>
+    
   </channel>
 </rss>
