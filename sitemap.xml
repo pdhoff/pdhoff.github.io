@@ -1,19 +1,39 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://pdhoff.github.io/about/</loc>
-  </url><url>
-    <loc>https://pdhoff.github.io/book/</loc>
-  </url><url>
-    <loc>https://pdhoff.github.io/categories/</loc>
-  </url><url>
-    <loc>https://pdhoff.github.io/</loc>
-  </url><url>
-    <loc>https://pdhoff.github.io/research/</loc>
-  </url><url>
-    <loc>https://pdhoff.github.io/tags/</loc>
-  </url><url>
-    <loc>https://pdhoff.github.io/teaching/</loc>
+    <loc>https://www2.stat.duke.edu/~pdh10/essays/index.html</loc>
+    <lastmod>2026-11-23T20:13:22.220Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www2.stat.duke.edu/~pdh10/essays/blue_collar_stats.html</loc>
+    <lastmod>2026-11-23T20:11:48.944Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www2.stat.duke.edu/~pdh10/book.html</loc>
+    <lastmod>2026-09-13T00:07:40.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www2.stat.duke.edu/~pdh10/research.html</loc>
+    <lastmod>2026-09-13T11:21:55.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www2.stat.duke.edu/~pdh10/about.html</loc>
+    <lastmod>2026-09-12T11:20:48.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www2.stat.duke.edu/~pdh10/teaching.html</loc>
+    <lastmod>2026-09-12T11:45:17.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www2.stat.duke.edu/~pdh10/index.html</loc>
+    <lastmod>2026-10-07T23:44:17.000Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www2.stat.duke.edu/~pdh10/essays/gibbs_within_mh.html</loc>
+    <lastmod>2026-11-23T19:34:47.979Z</lastmod>
+  </url>
+  <url>
+    <loc>https://www2.stat.duke.edu/~pdh10/essays/bayes_without_posteriors.html</loc>
+    <lastmod>2026-11-20T23:22:48.000Z</lastmod>
   </url>
 </urlset>

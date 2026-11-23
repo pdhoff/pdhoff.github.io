@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>Peter Hoff</title>
+<link>https://www2.stat.duke.edu/~pdh10/essays/</link>
+<atom:link href="https://www2.stat.duke.edu/~pdh10/essays/index.xml" rel="self" type="application/rss+xml"/>
+<description></description>
+<generator>quarto-1.10.19</generator>
+<lastBuildDate>Sat, 21 Nov 2026 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Blue-collar statistical science</title>
+  <link>https://www2.stat.duke.edu/~pdh10/essays/blue_collar_stats.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+
+ ]]></description>
+  <guid>https://www2.stat.duke.edu/~pdh10/essays/blue_collar_stats.html</guid>
+  <pubDate>Sat, 21 Nov 2026 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Gibbs within Metropolis-Hastings</title>
+  <link>https://www2.stat.duke.edu/~pdh10/essays/gibbs_within_mh.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+
+
+ ]]></description>
+  <guid>https://www2.stat.duke.edu/~pdh10/essays/gibbs_within_mh.html</guid>
+  <pubDate>Fri, 20 Nov 2026 05:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Bayesian inference without posteriors</title>
+  <link>https://www2.stat.duke.edu/~pdh10/essays/bayes_without_posteriors.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Conventional wisdom is that Bayesian inference flows from a posterior distribution: Let <img src="https://latex.codecogs.com/png.latex?Y%5Csim%20P"> for some <img src="https://latex.codecogs.com/png.latex?P"> in a model <img src="https://latex.codecogs.com/png.latex?%5C%7B%20P_%5Ctheta:%20%5Ctheta%5Cin%5CTheta%20%5C%7D"> with densities <img src="https://latex.codecogs.com/png.latex?%5C%7B%20p(%5Ccdot%20%7C%20%5Ctheta)%20:%20%5Ctheta%5Cin%20%5CTheta%5C%7D">. Upon observing <img src="https://latex.codecogs.com/png.latex?Y=y"> the density <img src="https://latex.codecogs.com/png.latex?p(y%7C%5Ctheta)"> at the observed value <img src="https://latex.codecogs.com/png.latex?y"> is combined with a prior density <img src="https://latex.codecogs.com/png.latex?%5Cpi(%5Ctheta)"> to define the posterior density <img src="https://latex.codecogs.com/png.latex?%5Cpi(%5Ctheta%7Cy)%20%5Cpropto%20%5Cpi(%5Ctheta)%5Ctimes%20p(y%7C%5Ctheta)">, from which posterior means, confidence intervals and other summaries of <img src="https://latex.codecogs.com/png.latex?%5Cpi(%5Ctheta%7Cy)"> may be computed. This is what I would call <em>Bayesian modeling</em>.</p>
+<p>I was in a seminar today where the speaker was discussing point process models for spatial data using an intractable likelihood (a likelihood functional without a finite representation), and he made an offhand statement along the lines of “Bayesian methods require a likelihood”. For a model with densities <img src="https://latex.codecogs.com/png.latex?%5C%7B%20p(%5Ccdot%20%7C%20%5Ctheta)%20:%20%5Ctheta%5Cin%20%5CTheta%5C%7D">, the likelihood is <img src="https://latex.codecogs.com/png.latex?p(y%7C%5Ctheta)"> as a function of <img src="https://latex.codecogs.com/png.latex?%5Ctheta">, which appears to be a necessary component of the posterior distribution, and thus of Bayesian modeling.</p>
+<p>However, an alternative starting point for Bayesian inference is <em>Bayesian decision theory</em>, which does not directly involve calculation of a posterior distribution, and so does not require a likelihood function in the usual sense. In this framework, a decision rule <img src="https://latex.codecogs.com/png.latex?%5Chat%20%5Cdelta:%20%5Cmathcal%20Y%20%5Crightarrow%20D"> is a Bayes rule for a loss function <img src="https://latex.codecogs.com/png.latex?L:%20%5CTheta%5Ctimes%20D%5Crightarrow%20R%5E+"> if it minimizes the prior expected loss, or <em>Bayes risk</em>: <img src="https://latex.codecogs.com/png.latex?%20%20R(%5Cdelta)%20%20=%20E%20%5B%20%20%20L(%5Ctheta,%20%5Cdelta(Y))%20%5D.%20%20"> This definition requires no likelihood function and no posterior calculation.</p>
+<p>Now one might argue that a posterior distribution is generally part of the solution to the Bayesian decision problem. After all, in general we can write <img src="https://latex.codecogs.com/png.latex?%5Cbegin%7Balign*%7D%0AE%5B%20L(%5Ctheta,%5Cdelta(Y))%20%5D%20&amp;%20=%20E%20%5B%20E%20%5B%20L%20(%5Ctheta,%20%5Cdelta(Y))%20%7C%20Y%20%5D%20%5D,%20%20%0A%5Cend%7Balign*%7D"> which suggests that the Bayes rule is given by <img src="https://latex.codecogs.com/png.latex?%5Cbegin%7Balign%7D%20%20%5Chat%5Cdelta(y)=%20%20%5Carg%20%5Cmin_%7Bd%5Cin%20D%7D%20E%5B%20L(%5Ctheta,d%20)%20%7C%20Y=y%20%20%20%5D.%0A%5Cend%7Balign%7D"> This seems to indicate that a Bayesian decision problem is solved by Bayesian modeling, i.e., calculation of a posterior distribution. While this is broadly true, there are some exceptions. For example, suppose the loss does not depend on <img src="https://latex.codecogs.com/png.latex?%5Ctheta">, and so <img src="https://latex.codecogs.com/png.latex?L(%5Ctheta,d)%20=%20f(d)"> for some function <img src="https://latex.codecogs.com/png.latex?f">. A Bayes rule satisfies <img src="https://latex.codecogs.com/png.latex?%5Chat%5Cdelta(y)%20=%20%5Carg%5Cmin_%7Bd%5Cin%20D%7D%20f(d)"> and is constant if the minimizer of <img src="https://latex.codecogs.com/png.latex?f"> is unique, provided a constant decision rule is allowed. Therefore, a unique Bayes rule is obtained without calculating any posterior distribution.</p>
+<p>This scenario becomes less trivial if the set of allowable decision rules is restricted. As an example, let <img src="https://latex.codecogs.com/png.latex?Y%5Csim%20N(%5Ctheta,%5Csigma%5E2)"> and suppose we want to construct a level-<img src="https://latex.codecogs.com/png.latex?%5Calpha"> test of <img src="https://latex.codecogs.com/png.latex?H:%5Ctheta=0"> using a test statistic of the form <img src="https://latex.codecogs.com/png.latex?t(Y)%20=%20%7C%20Y%20+%20b%20%7C"> for some <img src="https://latex.codecogs.com/png.latex?b%5Cin%20%5Cmathbb%20R">. We have a prior distribution <img src="https://latex.codecogs.com/png.latex?%5Ctheta%5Csim%20N(%5Cmu,%5Ctau%5E2)">, and wish to use the level-<img src="https://latex.codecogs.com/png.latex?%5Calpha"> test that maximizes the prior expected power. In terms of a decision problem, an allowable decision rule is of the form <img src="https://latex.codecogs.com/png.latex?%5Cdelta(y)%20=%201%5Ctimes%20(%20%7Cy+b%20%7C%20%3E%20c_b%20)"> where <img src="https://latex.codecogs.com/png.latex?c_b"> satisfies <img src="https://latex.codecogs.com/png.latex?%5CPhi(%20(c_b%20-b%20)/%5Csigma)%20-%20%5CPhi(%20-(c_b+b)/%5Csigma)%20=%201-%5Calpha">, and our loss is <img src="https://latex.codecogs.com/png.latex?L(%5Ctheta,%5Cdelta(y))%20=1%20-%20%5Cdelta(y)">. To minimize the loss, we would like the decision rule <img src="https://latex.codecogs.com/png.latex?%5Cdelta(y)%20=%201">, but this is not allowed as it does not correspond to a level-<img src="https://latex.codecogs.com/png.latex?%5Calpha"> test. So in this case, the Bayes rule is <em>not</em> found by pointwise posterior risk minimization. Instead, it can be found by directly maximizing the prior expected power, or equivalently, by obtaining the most powerful level-<img src="https://latex.codecogs.com/png.latex?%5Calpha"> test of <img src="https://latex.codecogs.com/png.latex?H:%20Y%5Csim%20N(%200,%5Csigma%5E2)"> versus <img src="https://latex.codecogs.com/png.latex?K:%20Y%5Csim%20N(%20%5Cmu,%5Ctau%5E2+%20%5Csigma%5E2%20)">. The optimal test statistic is <img src="https://latex.codecogs.com/png.latex?%7Cy%20+%20%5Ctilde%20b%20%7C"> with <img src="https://latex.codecogs.com/png.latex?%5Ctilde%20b=%5Cmu%5Ctfrac%7B%5Csigma%5E2%7D%7B%5Ctau%5E2%7D">, and the acceptance region of the test is <img src="https://latex.codecogs.com/png.latex?%20-%20c_%7B%5Ctilde%20b%7D%20%20-%20%5Ctilde%20b%20%5Cleq%20y%20%5Cleq%20c_%7B%5Ctilde%20b%7D%20-%20%5Ctilde%20b,"> where <img src="https://latex.codecogs.com/png.latex?c_%7B%5Ctilde%20b%7D"> satisfies <img src="https://latex.codecogs.com/png.latex?%5CPhi(%20(%20c_%7B%5Ctilde%20b%7D%20%20-%5Ctilde%20b%20)/%5Csigma)%20-%20%5CPhi(%20-(%20c_%7B%5Ctilde%20b%7D%20+%20%5Ctilde%20b)/%5Csigma)%20=%201-%5Calpha">. <span class="citation" data-cites="hoff_2022a">Hoff (2022)</span> referred to this test as the “Frequentist assisted by Bayes” (FAB) test. It was used by <span class="citation" data-cites="pratt_1963">Pratt (1963)</span> and <span class="citation" data-cites="yu_hoff_2018">Yu and Hoff (2018)</span> to construct confidence intervals that maintain constant <img src="https://latex.codecogs.com/png.latex?1-%5Calpha"> coverage across all values of <img src="https://latex.codecogs.com/png.latex?%5Ctheta">, while also minimizing prior expected interval width.</p>
+<p>When the loss does depend on the parameter, posterior-less Bayes procedures can still arise if the class of allowable procedures is sufficiently constrained. For example, consider estimation of <img src="https://latex.codecogs.com/png.latex?%5Cbeta%5Cin%20%5Cmathbb%20R%5Ep"> in the model <img src="https://latex.codecogs.com/png.latex?y%20%5Csim%20N_n(X%5Cbeta,%20%5CSigma(%5Cbeta))">, where <img src="https://latex.codecogs.com/png.latex?%5CSigma"> is a known function of <img src="https://latex.codecogs.com/png.latex?%5Cbeta">. If we restrict ourselves to linear unbiased estimators, then the unique Bayes estimator under squared error loss is <img src="https://latex.codecogs.com/png.latex?%20%5Chat%5Cbeta%20=%20(X%5E%5Ctop%20%5Cbar%20%5CSigma%5E%7B-1%20%7D%20X)%5E%7B-1%7D%20X%5E%5Ctop%20%5Cbar%5CSigma%5E%7B-1%7D%20y,"> where <img src="https://latex.codecogs.com/png.latex?%5Cbar%20%5CSigma%20=%20E%20%5B%20%5CSigma(%5Cbeta)%20%5D">. This estimator is also the GLS estimator in the model <img src="https://latex.codecogs.com/png.latex?y%20%5Csim%20N_n(%20X%5Cbeta,%20%5Cbar%5CSigma)">.</p>
+
+
+
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent">
+<div id="ref-hoff_2022a" class="csl-entry">
+Hoff, P. D. 2022. <span>“Smaller <span><img src="https://latex.codecogs.com/png.latex?p"></span>-Values via Indirect Information.”</span> <em>J. Amer. Statist. Assoc.</em> 117 (539): 1254–69. <a href="https://doi.org/10.1080/01621459.2020.1844720">https://doi.org/10.1080/01621459.2020.1844720</a>.
+</div>
+<div id="ref-pratt_1963" class="csl-entry">
+Pratt, John W. 1963. <span>“Shorter Confidence Intervals for the Mean of a Normal Distribution with Known Variance.”</span> <em>The Annals of Mathematical Statistics</em> 34 (2): 574–86.
+</div>
+<div id="ref-yu_hoff_2018" class="csl-entry">
+Yu, C., and P. D. Hoff. 2018. <span>“Adaptive Multigroup Confidence Intervals with Constant Coverage.”</span> <em>Biometrika</em> 105 (2): 319–35. <a href="https://doi.org/10.1093/biomet/asy009">https://doi.org/10.1093/biomet/asy009</a>.
+</div>
+</div></section></div> ]]></description>
+  <guid>https://www2.stat.duke.edu/~pdh10/essays/bayes_without_posteriors.html</guid>
+  <pubDate>Fri, 16 Oct 2026 04:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
